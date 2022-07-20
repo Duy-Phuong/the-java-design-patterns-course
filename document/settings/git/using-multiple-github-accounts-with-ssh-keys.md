@@ -84,13 +84,9 @@ Identity added: /c/Users/PhuongTran/.ssh/id_rsa_other (phuong@MacBook-Pro-Phuong
 $ cat ~/.ssh/config
 
 # Default github account: oanhnn
-
 Host github.com
-
    HostName github.com
-
    IdentityFile ~/.ssh/id_rsa
-
    IdentitiesOnly yes
 
   
@@ -98,49 +94,27 @@ Host github.com
 # Other github account: superman
 
 Host github-superman
-
    HostName github.com
-
    IdentityFile ~/.ssh/id_rsa_other
-
    IdentitiesOnly yes
-
-  
   
 
 $ git clone git@github.com:Duy-Phuong/phuong-docs.git
-
 Cloning into 'phuong-docs'...
-
 Enter passphrase for key '/c/Users/PhuongTran/.ssh/id_rsa':
-
 git@github.com: Permission denied (publickey).
-
 fatal: Could not read from remote repository.
-
-  
-
 Please make sure you have the correct access rights
-
 and the repository exists.
 
-  
-  
 
 $ git clone git@github-superman:Duy-Phuong/phuong-docs.git
-
 Cloning into 'phuong-docs'...
-
 remote: Enumerating objects: 46, done.
-
 remote: Counting objects: 100% (46/46), done.
-
 remote: Compressing objects: 100% (41/41), done.
-
-remote: Total 46 (delta 1), reused 43 (delta 1), pack-reused 0
-
+remote: Total 46 (delta 1), reused 43 (delta 1), pack-reused 
 Receiving objects: 100% (46/46), 1.03 MiB | 688.00 KiB/s, done.
-
 Resolving deltas: 100% (1/1), done.
 
 $ ll
