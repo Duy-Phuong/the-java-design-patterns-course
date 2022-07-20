@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "edee38d59b5adb64",
-        "type": "split",
+        "id": "e86eab152209002f",
+        "type": "leaf",
         "dimension": 82.80309544282028,
-        "children": [
-          {
-            "id": "e86eab152209002f",
-            "type": "leaf",
-            "dimension": 77.27272727272727,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "document/settings/git/using-multiple-github-accounts-with-ssh-keys.md",
-                "mode": "source",
-                "source": false
-              }
-            },
-            "group": "4fb86754f67cbf7b"
-          },
-          {
-            "id": "10bd4137197e781c",
-            "type": "leaf",
-            "dimension": 22.727272727272727,
-            "state": {
-              "type": "mindmap",
-              "state": {}
-            }
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "template/OKRs.md",
+            "mode": "source",
+            "source": false
           }
-        ],
-        "direction": "horizontal"
+        },
+        "group": "4fb86754f67cbf7b"
       },
       {
         "id": "30de76eedcf1f8e6",
@@ -41,7 +24,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "document/settings/git/using-multiple-github-accounts-with-ssh-keys.md"
+            "file": "template/OKRs.md"
           }
         },
         "group": "4fb86754f67cbf7b"
@@ -108,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "document/settings/git/using-multiple-github-accounts-with-ssh-keys.md",
+                "file": "template/OKRs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "document/settings/git/using-multiple-github-accounts-with-ssh-keys.md",
+                "file": "template/OKRs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "document/settings/git/using-multiple-github-accounts-with-ssh-keys.md"
+                "file": "template/OKRs.md"
               }
             }
           }
@@ -161,15 +144,15 @@
   },
   "active": "e86eab152209002f",
   "lastOpenFiles": [
-    "README.md",
-    "document/diary/test.md",
+    "document/settings/git/using-multiple-github-accounts-with-ssh-keys.md",
+    "document/settings/config/wsl.json.md",
     "document/diary/mindmap test.md",
+    "document/diary/assets/Pasted image 20220720002433.png",
+    "document/diary/test.md",
+    "document/diary/assets/Pasted image 20220720002138.png",
+    "README.md",
     "Brother.md",
     "template/Meeting.md",
-    "template/Eisenhower Matrix.md",
-    "template/Daily Templater.md",
-    "template/Daily.md",
-    "template/Blog Post.md",
-    "template/Task list.md"
+    "template/Eisenhower Matrix.md"
   ]
 }
