@@ -1,5 +1,12 @@
 [
   "templater-obsidian",
   "obsidian-kanban",
-  "obsidian-mind-map"
+  "obsidian-mind-map",
+  "obsidian-outliner",
+  "obsidian-admonition",
+  "obsidian-git",
+  "obsidian-advanced-slides",
+  "code-block-copy",
+  "obsidian-extract-pdf-highlights",
+  "cmenu-plugin"
 ]
