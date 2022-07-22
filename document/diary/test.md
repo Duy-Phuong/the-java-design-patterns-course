@@ -1,4 +1,17 @@
 
+- [test](#test)
+  - [Links](#links)
+- [📅 Daily Log](#-daily-log)
+  - [🔷 Daily Tasks](#-daily-tasks)
+- [🕴 Business](#-business)
+  - [🎯 Objectives](#-objectives)
+  - [🚀 Working On](#-working-on)
+  - [📕 Reminders](#-reminders)
+  - [📚 Reading](#-reading)
+  - [💬 Lingering feelings, Observations and Thoughts](#-lingering-feelings-observations-and-thoughts)
+  - [🔃 Reflection](#-reflection)
+  - [📅 Today's Notes](#-todays-notes)
+
 #  test
 
 
@@ -15,6 +28,10 @@ type: daily-note
 
 
 **🏷️ Tags** : #07-2022 #daily
+
+
+---
+
 
 
 

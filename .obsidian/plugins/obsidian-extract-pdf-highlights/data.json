@@ -1,5 +1,5 @@
 {
-  "includePageNumber": false,
+  "includePageNumber": true,
   "includeHighlightColor": true,
-  "createLinks": false
+  "createLinks": true
 }
