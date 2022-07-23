@@ -1837,6 +1837,8 @@ import to eclipse
 
 ![Hands%20on%20Course%20for%20Java%20Developers/Untitled%2049.png](Hands%20on%20Course%20for%20Java%20Developers/Untitled%2049.png)
 
+![](assets/Pasted%20image%2020220724022210.png)
+
 ![https://github.com/Duy-Phuong/docker-docs/raw/master/docker-java.assets/image-20200621135320324.png](https://github.com/Duy-Phuong/docker-docs/raw/master/docker-java.assets/image-20200621135320324.png)
 
 ![Hands%20on%20Course%20for%20Java%20Developers/Untitled%2050.png](Hands%20on%20Course%20for%20Java%20Developers/Untitled%2050.png)

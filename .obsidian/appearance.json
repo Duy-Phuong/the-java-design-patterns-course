@@ -1,4 +1,5 @@
 {
   "cssTheme": "Violet Evening",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "baseFontSize": 16
 }
