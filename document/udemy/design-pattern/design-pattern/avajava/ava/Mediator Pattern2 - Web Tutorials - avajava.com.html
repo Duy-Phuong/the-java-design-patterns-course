@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0070)https://www.avajava.com/tutorials/lessons/mediator-pattern.html?page=2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Mediator Pattern - Web Tutorials - avajava.com</title>
+<meta name="keywords" content="Java, mediator pattern, design pattern, behavioral pattern">
+<meta name="description" content="This Java tutorial describes the mediator pattern, a behavioral object pattern.">
+<link href="./Mediator Pattern2 - Web Tutorials - avajava.com_files/default.css" rel="stylesheet" type="text/css">
+<link href="./Mediator Pattern2 - Web Tutorials - avajava.com_files/codeformat.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+<link rel="icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+</head>
+<body>
+<div id="outer">
+	<div id="header">
+		<h1>
+		<a href="https://www.avajava.com/tutorials">
+		AVAJAVA Web Tutorials</a>
+		</h1>
+		
+		<h2 id="firsth2">
+			Total Categories: 24,
+			Total Tutorials: 508</h2>
+	
+			<h2 id="secondh2">
+				Design Patterns:
+				14 of
+				22 tutorials
+				</h2>
+				<h2 id="thirdh2">
+				Mediator Pattern</h2>
+			</div>
+	<div id="menu">
+		<ul>
+<!-- 
+		<li class="first">"Java forwards and backwards"</li>
+ --> 
+<!-- 		<li><a class="toptext" href="http://www.jarvana.com/" title="Search Maven Repository">Maven Repository Search</a></li>
+		<li><a class="toptext" href="http://www.jarvana.com/jarvana/doc" title="Search for Javadocs Classes and Projects">Javadoc Search</a></li> -->			
+
+		</ul>
+		<div id="search">
+		Search Tutorials:
+		<form style="display: inline" action="https://www.avajava.com/tutorials/search" method="get" name="searchForm">
+		<input style="margin-bottom: 2px;" type="text" size="20" maxlength="50" name="q" value="">
+		<input id="searchbutton" type="submit" value="  Go  ">
+		</form>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="topbreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./Mediator Pattern2 - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./Mediator Pattern2 - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Template Method Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/template-method-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./Mediator Pattern2 - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;14.
+Mediator Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Chain of Responsibility Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/chain-of-responsibility-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./Mediator Pattern2 - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="content">
+		<div id="primaryContentContainer">
+			<div id="primaryContent">
+<table width="100%">
+	<tbody><tr>
+		<td id="sidemenu">
+		<div id="sidemenucats"><strong>Tutorial Categories:</strong> <ol><li><a href="https://www.avajava.com/tutorials/categories/ajax">Ajax</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/ant">Ant</a> (16)</li><li><a href="https://www.avajava.com/tutorials/categories/apache-web-server">Apache Web Server</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/bioinformatics">Bioinformatics</a> (10)</li><li><a href="https://www.avajava.com/tutorials/categories/cascading-style-sheets">Cascading Style Sheets</a> (47)</li><li><a href="https://www.avajava.com/tutorials/categories/classes-and-objects">Classes and Objects</a> (14)</li><li><a href="https://www.avajava.com/tutorials/categories/database">Database</a> (13)</li><li><a class="currentcategory" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a> (22)</li><li><a href="https://www.avajava.com/tutorials/categories/eclipse">Eclipse</a> (39)</li><li><a href="https://www.avajava.com/tutorials/categories/files">Files</a> (62)</li><li><a href="https://www.avajava.com/tutorials/categories/general-java">General Java</a> (69)</li><li><a href="https://www.avajava.com/tutorials/categories/jsps">JSPs</a> (9)</li><li><a href="https://www.avajava.com/tutorials/categories/java-basics">Java Basics</a> (11)</li><li><a href="https://www.avajava.com/tutorials/categories/linux">Linux</a> (23)</li><li><a href="https://www.avajava.com/tutorials/categories/logging">Logging</a> (5)</li><li><a href="https://www.avajava.com/tutorials/categories/maven">Maven</a> (88)</li><li><a href="https://www.avajava.com/tutorials/categories/search">Search</a> (12)</li><li><a href="https://www.avajava.com/tutorials/categories/servlets">Servlets</a> (20)</li><li><a href="https://www.avajava.com/tutorials/categories/struts">Struts</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/text">Text</a> (19)</li><li><a href="https://www.avajava.com/tutorials/categories/tomcat">Tomcat</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/version-control">Version Control</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/windows">Windows</a> (2)</li><li><a href="https://www.avajava.com/tutorials/categories/xml">XML</a> (1)</li></ol><!-- Google Ads is off  -->
+			<!-- Amazon Ads is off  -->
+			</div>
+		</td>
+
+		<td id="mainside"><!-- Google Ads is off  -->
+<hr>
+<div class="accentuate">
+<div class="title">Mediator Pattern</div>
+<div>Author: Deron Eriksson</div>
+<div class="smaller">Description: This Java tutorial describes the mediator pattern, a behavioral object pattern.</div>
+<div class="smaller">
+Tutorial created using:
+Windows Vista || JDK 1.6.0_11 || Eclipse JEE Ganymede SR1 (Eclipse 3.4.1)</div>
+</div>
+<hr>
+<br>
+
+<div style="font-weight: bold">Page: <a href="https://www.avajava.com/tutorials/lessons/mediator-pattern.html?page=1" title="Go to page 1">&lt;</a> <a href="https://www.avajava.com/tutorials/lessons/mediator-pattern.html?page=1" title="Go to page 1">1</a> 2</div><br>
+<p class="continue">(Continued from page 1) </p><p>In the constructor of the AmericanSeller class, the class gets a reference to the mediator and the priceInDollars gets set. This is the price of some good being sold. The seller registers with the mediator as the AmericanSeller. The seller's isBidAccepted() method takes a bid (in dollars). If the bid is over the price (in dollars), the bid is accepted and true is returned. Otherwise, false is returned. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/mediator-pattern/AmericanSeller.java">AmericanSeller.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> AmericanSeller {
+
+	Mediator mediator;
+	<span class="javaKeyword">float</span> priceInDollars;
+
+	<span class="javaKeyword">public</span> AmericanSeller(Mediator mediator, <span class="javaKeyword">float</span> priceInDollars) {
+		<span class="javaKeyword">this</span>.mediator = mediator;
+		<span class="javaKeyword">this</span>.priceInDollars = priceInDollars;
+		<span class="javaKeyword">this</span>.mediator.registerAmericanSeller(<span class="javaKeyword">this</span>);
+	}
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">boolean</span> isBidAccepted(<span class="javaKeyword">float</span> bidInDollars) {
+		<span class="javaKeyword">if</span> (bidInDollars &gt;= priceInDollars) {
+			System.out.println(<span class="javaString">"Seller accepts the bid of "</span> + bidInDollars + <span class="javaString">" dollars\n"</span>);
+			<span class="javaKeyword">return</span> true;
+		} <span class="javaKeyword">else</span> {
+			System.out.println(<span class="javaString">"Seller rejects the bid of "</span> + bidInDollars + <span class="javaString">" dollars\n"</span>);
+			<span class="javaKeyword">return</span> false;
+		}
+	}
+
+}
+</pre>
+<p>The DollarConverter class is another colleague class. When created, it gets a reference to the mediator and registers itself with the mediator as the DollarConverter. This class has methods to convert amounts in euros and kronor to dollars. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/mediator-pattern/DollarConverter.java">DollarConverter.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> DollarConverter {
+
+	Mediator mediator;
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">static</span> <span class="javaKeyword">final</span> <span class="javaKeyword">float</span> DOLLAR_UNIT = 1.0f;
+	<span class="javaKeyword">public</span> <span class="javaKeyword">static</span> <span class="javaKeyword">final</span> <span class="javaKeyword">float</span> EURO_UNIT = 0.7f;
+	<span class="javaKeyword">public</span> <span class="javaKeyword">static</span> <span class="javaKeyword">final</span> <span class="javaKeyword">float</span> KRONA_UNIT = 8.0f;
+
+	<span class="javaKeyword">public</span> DollarConverter(Mediator mediator) {
+		<span class="javaKeyword">this</span>.mediator = mediator;
+		mediator.registerDollarConverter(<span class="javaKeyword">this</span>);
+	}
+
+	<span class="javaKeyword">private</span> <span class="javaKeyword">float</span> convertEurosToDollars(<span class="javaKeyword">float</span> euros) {
+		<span class="javaKeyword">float</span> dollars = euros * (DOLLAR_UNIT / EURO_UNIT);
+		System.out.println(<span class="javaString">"Converting "</span> + euros + <span class="javaString">" euros to "</span> + dollars + <span class="javaString">" dollars"</span>);
+		<span class="javaKeyword">return</span> dollars;
+	}
+
+	<span class="javaKeyword">private</span> <span class="javaKeyword">float</span> convertKronorToDollars(<span class="javaKeyword">float</span> kronor) {
+		<span class="javaKeyword">float</span> dollars = kronor * (DOLLAR_UNIT / KRONA_UNIT);
+		System.out.println(<span class="javaString">"Converting "</span> + kronor + <span class="javaString">" kronor to "</span> + dollars + <span class="javaString">" dollars"</span>);
+		<span class="javaKeyword">return</span> dollars;
+	}
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">float</span> convertCurrencyToDollars(<span class="javaKeyword">float</span> amount, String unitOfCurrency) {
+		<span class="javaKeyword">if</span> (<span class="javaString">"krona"</span>.equalsIgnoreCase(unitOfCurrency)) {
+			<span class="javaKeyword">return</span> convertKronorToDollars(amount);
+		} <span class="javaKeyword">else</span> {
+			<span class="javaKeyword">return</span> convertEurosToDollars(amount);
+		}
+	}
+}
+</pre>
+<p>The Demo class demonstrates our mediator pattern. It creates a SwedishBuyer object and a FrenchBuyer object. It creates an AmericanSeller object with a selling price set to 10 dollars. It then creates a DollarConverter. All of these objects register themselves with the mediator in their constructors. The Swedish buyer starts with a bid of 55 kronor and keeps bidding up in increments of 15 kronor until the bid is accepted. The French buyer starts bidding at 3 euros and keeps bidding in increments of 1.50 euros until the bid is accepted. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/mediator-pattern/Demo.java">Demo.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> Demo {
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">static</span> <span class="javaKeyword">void</span> main(String[] args) {
+
+		Mediator mediator = <span class="javaKeyword">new</span> Mediator();
+
+		Buyer swedishBuyer = <span class="javaKeyword">new</span> SwedishBuyer(mediator);
+		Buyer frenchBuyer = <span class="javaKeyword">new</span> FrenchBuyer(mediator);
+		<span class="javaKeyword">float</span> sellingPriceInDollars = 10.0f;
+		AmericanSeller americanSeller = <span class="javaKeyword">new</span> AmericanSeller(mediator, sellingPriceInDollars);
+		DollarConverter dollarConverter = <span class="javaKeyword">new</span> DollarConverter(mediator);
+
+		<span class="javaKeyword">float</span> swedishBidInKronor = 55.0f;
+		<span class="javaKeyword">while</span> (!swedishBuyer.attemptToPurchase(swedishBidInKronor)) {
+			swedishBidInKronor += 15.0f;
+		}
+
+		<span class="javaKeyword">float</span> frenchBidInEuros = 3.0f;
+		<span class="javaKeyword">while</span> (!frenchBuyer.attemptToPurchase(frenchBidInEuros)) {
+			frenchBidInEuros += 1.5f;
+		}
+
+	}
+
+}
+</pre>
+<p>The console output of the execution of Demo is shown here. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/mediator-pattern/console.txt">Console Output</a></h3>
+<pre>Buyer attempting a bid of 55.0 krona
+Converting 55.0 kronor to 6.875 dollars
+Seller rejects the bid of 6.875 dollars
+
+Buyer attempting a bid of 70.0 krona
+Converting 70.0 kronor to 8.75 dollars
+Seller rejects the bid of 8.75 dollars
+
+Buyer attempting a bid of 85.0 krona
+Converting 85.0 kronor to 10.625 dollars
+Seller accepts the bid of 10.625 dollars
+
+Buyer attempting a bid of 3.0 euro
+Converting 3.0 euros to 4.285714 dollars
+Seller rejects the bid of 4.285714 dollars
+
+Buyer attempting a bid of 4.5 euro
+Converting 4.5 euros to 6.4285717 dollars
+Seller rejects the bid of 6.4285717 dollars
+
+Buyer attempting a bid of 6.0 euro
+Converting 6.0 euros to 8.571428 dollars
+Seller rejects the bid of 8.571428 dollars
+
+Buyer attempting a bid of 7.5 euro
+Converting 7.5 euros to 10.714286 dollars
+Seller accepts the bid of 10.714286 dollars
+
+</pre>
+
+<p>In this example of the mediator pattern, notice that all communication between our objects (buyers, seller, and converter) occurs via the mediator. The mediator pattern helps reduce the number of object references needed (via composition) as classes proliferate in a project as a project grows. </p>
+
+
+<div style="font-weight: bold">Page: <a href="https://www.avajava.com/tutorials/lessons/mediator-pattern.html?page=1" title="Go to page 1">&lt;</a> <a href="https://www.avajava.com/tutorials/lessons/mediator-pattern.html?page=1" title="Go to page 1">1</a> 2</div><br>
+<hr>
+
+<!-- start related tutorials -->
+<div>
+<h3>Related Tutorials:</h3>
+<ul style="margin-left: 1em;">
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/template-method-pattern.html" title="This Java tutorial describes the template method pattern, a behavioral class pattern.">Template Method Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/chain-of-responsibility-pattern.html" title="This Java tutorial describes the chain of responsibility pattern, a behavioral object pattern.">Chain of Responsibility Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/observer-pattern.html" title="This Java tutorial describes the observer pattern, a behavioral object pattern.">Observer Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/strategy-pattern.html" title="This Java tutorial describes the strategy pattern, a behavioral object pattern.">Strategy Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/command-pattern.html" title="This Java tutorial describes the command pattern, a behavioral object pattern.">Command Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/state-pattern.html" title="This Java tutorial describes the state pattern, a behavioral object pattern.">State Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/visitor-pattern.html" title="This Java tutorial describes the visitor pattern, a behavioral object pattern.">Visitor Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/iterator-pattern.html" title="This Java tutorial describes the iterator pattern, a behavioral object pattern.">Iterator Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/memento-pattern.html" title="This Java tutorial describes the memento pattern, a behavioral object pattern.">Memento Pattern</a>
+</li>
+</ul>
+</div>
+<!-- end related tutorials -->
+
+<!-- Amazon Ads is off  -->
+	<!-- Google Ads is off  -->
+</td></tr></tbody></table>
+</div>
+		</div>
+
+		<div class="clear">&nbsp;</div>		
+	</div>
+	<div id="bottombreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./Mediator Pattern2 - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./Mediator Pattern2 - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Template Method Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/template-method-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./Mediator Pattern2 - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;14.
+Mediator Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Chain of Responsibility Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/chain-of-responsibility-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./Mediator Pattern2 - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="footer">
+<p>Copyright © 2014 
+Code Strategies 
+		| Template: <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>
+		| <a href="http://www.avajava.com/contact.jsp">Contact</a>
+<!-- 		| <a href="http://www.avajava.com/about.jsp" title="About">About</a> -->
+		</p>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./Mediator Pattern2 - Web Tutorials - avajava.com_files/ga.js.tải xuống" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4759485-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+
+</body></html>

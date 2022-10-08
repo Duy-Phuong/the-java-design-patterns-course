@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0060)https://www.avajava.com/tutorials/lessons/state-pattern.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>State Pattern - Web Tutorials - avajava.com</title>
+<meta name="keywords" content="Java, state pattern, design pattern, behavioral pattern">
+<meta name="description" content="This Java tutorial describes the state pattern, a behavioral object pattern.">
+<link href="./State Pattern - Web Tutorials - avajava.com_files/default.css" rel="stylesheet" type="text/css">
+<link href="./State Pattern - Web Tutorials - avajava.com_files/codeformat.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+<link rel="icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+</head>
+<body>
+<div id="outer">
+	<div id="header">
+		<h1>
+		<a href="https://www.avajava.com/tutorials">
+		AVAJAVA Web Tutorials</a>
+		</h1>
+		
+		<h2 id="firsth2">
+			Total Categories: 24,
+			Total Tutorials: 508</h2>
+	
+			<h2 id="secondh2">
+				Design Patterns:
+				19 of
+				22 tutorials
+				</h2>
+				<h2 id="thirdh2">
+				State Pattern</h2>
+			</div>
+	<div id="menu">
+		<ul>
+<!-- 
+		<li class="first">"Java forwards and backwards"</li>
+ --> 
+<!-- 		<li><a class="toptext" href="http://www.jarvana.com/" title="Search Maven Repository">Maven Repository Search</a></li>
+		<li><a class="toptext" href="http://www.jarvana.com/jarvana/doc" title="Search for Javadocs Classes and Projects">Javadoc Search</a></li> -->			
+
+		</ul>
+		<div id="search">
+		Search Tutorials:
+		<form style="display: inline" action="https://www.avajava.com/tutorials/search" method="get" name="searchForm">
+		<input style="margin-bottom: 2px;" type="text" size="20" maxlength="50" name="q" value="">
+		<input id="searchbutton" type="submit" value="  Go  ">
+		</form>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="topbreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./State Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./State Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Command Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/command-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./State Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;19.
+State Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Visitor Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/visitor-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./State Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="content">
+		<div id="primaryContentContainer">
+			<div id="primaryContent">
+<table width="100%">
+	<tbody><tr>
+		<td id="sidemenu">
+		<div id="sidemenucats"><strong>Tutorial Categories:</strong> <ol><li><a href="https://www.avajava.com/tutorials/categories/ajax">Ajax</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/ant">Ant</a> (16)</li><li><a href="https://www.avajava.com/tutorials/categories/apache-web-server">Apache Web Server</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/bioinformatics">Bioinformatics</a> (10)</li><li><a href="https://www.avajava.com/tutorials/categories/cascading-style-sheets">Cascading Style Sheets</a> (47)</li><li><a href="https://www.avajava.com/tutorials/categories/classes-and-objects">Classes and Objects</a> (14)</li><li><a href="https://www.avajava.com/tutorials/categories/database">Database</a> (13)</li><li><a class="currentcategory" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a> (22)</li><li><a href="https://www.avajava.com/tutorials/categories/eclipse">Eclipse</a> (39)</li><li><a href="https://www.avajava.com/tutorials/categories/files">Files</a> (62)</li><li><a href="https://www.avajava.com/tutorials/categories/general-java">General Java</a> (69)</li><li><a href="https://www.avajava.com/tutorials/categories/jsps">JSPs</a> (9)</li><li><a href="https://www.avajava.com/tutorials/categories/java-basics">Java Basics</a> (11)</li><li><a href="https://www.avajava.com/tutorials/categories/linux">Linux</a> (23)</li><li><a href="https://www.avajava.com/tutorials/categories/logging">Logging</a> (5)</li><li><a href="https://www.avajava.com/tutorials/categories/maven">Maven</a> (88)</li><li><a href="https://www.avajava.com/tutorials/categories/search">Search</a> (12)</li><li><a href="https://www.avajava.com/tutorials/categories/servlets">Servlets</a> (20)</li><li><a href="https://www.avajava.com/tutorials/categories/struts">Struts</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/text">Text</a> (19)</li><li><a href="https://www.avajava.com/tutorials/categories/tomcat">Tomcat</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/version-control">Version Control</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/windows">Windows</a> (2)</li><li><a href="https://www.avajava.com/tutorials/categories/xml">XML</a> (1)</li></ol><!-- Google Ads is off  -->
+			<!-- Amazon Ads is off  -->
+			</div>
+		</td>
+
+		<td id="mainside"><!-- Google Ads is off  -->
+<hr>
+<div class="accentuate">
+<div class="title">State Pattern</div>
+<div>Author: Deron Eriksson</div>
+<div class="smaller">Description: This Java tutorial describes the state pattern, a behavioral object pattern.</div>
+<div class="smaller">
+Tutorial created using:
+Windows Vista || JDK 1.6.0_11 || Eclipse JEE Ganymede SR1 (Eclipse 3.4.1)</div>
+</div>
+<hr>
+<br>
+
+<div style="font-weight: bold">Page: &nbsp;&nbsp; 1 <a href="https://www.avajava.com/tutorials/lessons/state-pattern.html?page=2" title="Go to page 2">2</a>&nbsp;<a href="https://www.avajava.com/tutorials/lessons/state-pattern.html?page=2" title="Go to page 2">&gt;</a></div><br>
+<p>The state pattern is a behavioral object design pattern. The idea behind the state pattern is for an object to change its behavior depending on its state. In the state pattern, we have a Context class, and this class has a State reference to a Concrete State instance. The State interface declares particular methods that represent the behaviors of a particular state. Concrete States implement these behaviors. By changing a Context's Concrete State, we change its behavior. In essence, in the state pattern, a class (the Context) is supposed to behave like different classes depending on its state. The state pattern avoids the use of switch and if statements to change behavior. </p>
+
+<p>Let's look at an example of the state pattern. First off, we'll define the EmotionalState interface. It declares two methods, sayHello() and sayGoodbye(). </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/state-pattern/EmotionalState.java">EmotionalState.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaSComment">// State</span>
+<span class="javaKeyword">public</span> <span class="javaKeyword">interface</span> EmotionalState {
+
+	<span class="javaKeyword">public</span> String sayHello();
+
+	<span class="javaKeyword">public</span> String sayGoodbye();
+
+}
+</pre>
+<p>The HappyState class is a Concrete State that implements sayHello() and sayGoodbye() of EmotionalState. These messages are cheerful (representing a happy state). </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/state-pattern/HappyState.java">HappyState.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaSComment">// Concrete State</span>
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> HappyState <span class="javaKeyword">implements</span> EmotionalState {
+
+	@Override
+	<span class="javaKeyword">public</span> String sayGoodbye() {
+		<span class="javaKeyword">return</span> <span class="javaString">"Bye, friend!"</span>;
+	}
+
+	@Override
+	<span class="javaKeyword">public</span> String sayHello() {
+		<span class="javaKeyword">return</span> <span class="javaString">"Hello, friend!"</span>;
+	}
+
+}
+</pre>
+<p>The SadState class also implements the EmotionalState interface. The messages are sad (representing a sad state). </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/state-pattern/SadState.java">SadState.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaSComment">//Concrete State</span>
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> SadState <span class="javaKeyword">implements</span> EmotionalState {
+
+	@Override
+	<span class="javaKeyword">public</span> String sayGoodbye() {
+		<span class="javaKeyword">return</span> <span class="javaString">"Bye. Sniff, sniff."</span>;
+	}
+
+	@Override
+	<span class="javaKeyword">public</span> String sayHello() {
+		<span class="javaKeyword">return</span> <span class="javaString">"Hello. Sniff, sniff."</span>;
+	}
+
+}
+</pre>
+<p>The Person class is the Context class. It contains an EmotionalState reference to a concrete state. In this example, we have Person implement the EmotionalState reference, and we pass the calls to Person's sayHello() and sayGoodbye() methods on to the corresponding methods on the emotionalState reference. As a result of this, a Person object behaves differently depending on the state of Person (ie, the current EmotionalState reference). </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/state-pattern/Person.java">Person.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaSComment">// Context</span>
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> Person <span class="javaKeyword">implements</span> EmotionalState {
+
+	EmotionalState emotionalState;
+
+	<span class="javaKeyword">public</span> Person(EmotionalState emotionalState) {
+		<span class="javaKeyword">this</span>.emotionalState = emotionalState;
+	}
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> setEmotionalState(EmotionalState emotionalState) {
+		<span class="javaKeyword">this</span>.emotionalState = emotionalState;
+	}
+
+	@Override
+	<span class="javaKeyword">public</span> String sayGoodbye() {
+		<span class="javaKeyword">return</span> emotionalState.sayGoodbye();
+	}
+
+	@Override
+	<span class="javaKeyword">public</span> String sayHello() {
+		<span class="javaKeyword">return</span> emotionalState.sayHello();
+	}
+
+}
+</pre>
+
+<p class="continue">(Continued on page 2)</p><div style="font-weight: bold">Page: &nbsp;&nbsp; 1 <a href="https://www.avajava.com/tutorials/lessons/state-pattern.html?page=2" title="Go to page 2">2</a>&nbsp;<a href="https://www.avajava.com/tutorials/lessons/state-pattern.html?page=2" title="Go to page 2">&gt;</a></div><br>
+<hr>
+
+<!-- start related tutorials -->
+<div>
+<h3>Related Tutorials:</h3>
+<ul style="margin-left: 1em;">
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/template-method-pattern.html" title="This Java tutorial describes the template method pattern, a behavioral class pattern.">Template Method Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/mediator-pattern.html" title="This Java tutorial describes the mediator pattern, a behavioral object pattern.">Mediator Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/chain-of-responsibility-pattern.html" title="This Java tutorial describes the chain of responsibility pattern, a behavioral object pattern.">Chain of Responsibility Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/observer-pattern.html" title="This Java tutorial describes the observer pattern, a behavioral object pattern.">Observer Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/strategy-pattern.html" title="This Java tutorial describes the strategy pattern, a behavioral object pattern.">Strategy Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/command-pattern.html" title="This Java tutorial describes the command pattern, a behavioral object pattern.">Command Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/visitor-pattern.html" title="This Java tutorial describes the visitor pattern, a behavioral object pattern.">Visitor Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/iterator-pattern.html" title="This Java tutorial describes the iterator pattern, a behavioral object pattern.">Iterator Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/memento-pattern.html" title="This Java tutorial describes the memento pattern, a behavioral object pattern.">Memento Pattern</a>
+</li>
+</ul>
+</div>
+<!-- end related tutorials -->
+
+<!-- Amazon Ads is off  -->
+	<!-- Google Ads is off  -->
+</td></tr></tbody></table>
+</div>
+		</div>
+
+		<div class="clear">&nbsp;</div>		
+	</div>
+	<div id="bottombreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./State Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./State Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Command Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/command-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./State Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;19.
+State Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Visitor Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/visitor-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./State Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="footer">
+<p>Copyright © 2014 
+Code Strategies 
+		| Template: <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>
+		| <a href="http://www.avajava.com/contact.jsp">Contact</a>
+<!-- 		| <a href="http://www.avajava.com/about.jsp" title="About">About</a> -->
+		</p>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./State Pattern - Web Tutorials - avajava.com_files/ga.js.tải xuống" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4759485-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+
+</body></html>

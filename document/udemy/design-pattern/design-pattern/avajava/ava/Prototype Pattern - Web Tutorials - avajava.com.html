@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0064)https://www.avajava.com/tutorials/lessons/prototype-pattern.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Prototype Pattern - Web Tutorials - avajava.com</title>
+<meta name="keywords" content="Java, prototype pattern, design pattern, creational pattern, clone">
+<meta name="description" content="This Java tutorial describes the prototype pattern, a creational design pattern.">
+<link href="./Prototype Pattern - Web Tutorials - avajava.com_files/default.css" rel="stylesheet" type="text/css">
+<link href="./Prototype Pattern - Web Tutorials - avajava.com_files/codeformat.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+<link rel="icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+</head>
+<body>
+<div id="outer">
+	<div id="header">
+		<h1>
+		<a href="https://www.avajava.com/tutorials">
+		AVAJAVA Web Tutorials</a>
+		</h1>
+		
+		<h2 id="firsth2">
+			Total Categories: 24,
+			Total Tutorials: 508</h2>
+	
+			<h2 id="secondh2">
+				Design Patterns:
+				5 of
+				22 tutorials
+				</h2>
+				<h2 id="thirdh2">
+				Prototype Pattern</h2>
+			</div>
+	<div id="menu">
+		<ul>
+<!-- 
+		<li class="first">"Java forwards and backwards"</li>
+ --> 
+<!-- 		<li><a class="toptext" href="http://www.jarvana.com/" title="Search Maven Repository">Maven Repository Search</a></li>
+		<li><a class="toptext" href="http://www.jarvana.com/jarvana/doc" title="Search for Javadocs Classes and Projects">Javadoc Search</a></li> -->			
+
+		</ul>
+		<div id="search">
+		Search Tutorials:
+		<form style="display: inline" action="https://www.avajava.com/tutorials/search" method="get" name="searchForm">
+		<input style="margin-bottom: 2px;" type="text" size="20" maxlength="50" name="q" value="">
+		<input id="searchbutton" type="submit" value="  Go  ">
+		</form>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="topbreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./Prototype Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./Prototype Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Creational Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Builder Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/builder-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./Prototype Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;5.
+Prototype Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Adapter Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/adapter-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./Prototype Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="content">
+		<div id="primaryContentContainer">
+			<div id="primaryContent">
+<table width="100%">
+	<tbody><tr>
+		<td id="sidemenu">
+		<div id="sidemenucats"><strong>Tutorial Categories:</strong> <ol><li><a href="https://www.avajava.com/tutorials/categories/ajax">Ajax</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/ant">Ant</a> (16)</li><li><a href="https://www.avajava.com/tutorials/categories/apache-web-server">Apache Web Server</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/bioinformatics">Bioinformatics</a> (10)</li><li><a href="https://www.avajava.com/tutorials/categories/cascading-style-sheets">Cascading Style Sheets</a> (47)</li><li><a href="https://www.avajava.com/tutorials/categories/classes-and-objects">Classes and Objects</a> (14)</li><li><a href="https://www.avajava.com/tutorials/categories/database">Database</a> (13)</li><li><a class="currentcategory" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a> (22)</li><li><a href="https://www.avajava.com/tutorials/categories/eclipse">Eclipse</a> (39)</li><li><a href="https://www.avajava.com/tutorials/categories/files">Files</a> (62)</li><li><a href="https://www.avajava.com/tutorials/categories/general-java">General Java</a> (69)</li><li><a href="https://www.avajava.com/tutorials/categories/jsps">JSPs</a> (9)</li><li><a href="https://www.avajava.com/tutorials/categories/java-basics">Java Basics</a> (11)</li><li><a href="https://www.avajava.com/tutorials/categories/linux">Linux</a> (23)</li><li><a href="https://www.avajava.com/tutorials/categories/logging">Logging</a> (5)</li><li><a href="https://www.avajava.com/tutorials/categories/maven">Maven</a> (88)</li><li><a href="https://www.avajava.com/tutorials/categories/search">Search</a> (12)</li><li><a href="https://www.avajava.com/tutorials/categories/servlets">Servlets</a> (20)</li><li><a href="https://www.avajava.com/tutorials/categories/struts">Struts</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/text">Text</a> (19)</li><li><a href="https://www.avajava.com/tutorials/categories/tomcat">Tomcat</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/version-control">Version Control</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/windows">Windows</a> (2)</li><li><a href="https://www.avajava.com/tutorials/categories/xml">XML</a> (1)</li></ol><!-- Google Ads is off  -->
+			<!-- Amazon Ads is off  -->
+			</div>
+		</td>
+
+		<td id="mainside"><!-- Google Ads is off  -->
+<hr>
+<div class="accentuate">
+<div class="title">Prototype Pattern</div>
+<div>Author: Deron Eriksson</div>
+<div class="smaller">Description: This Java tutorial describes the prototype pattern, a creational design pattern.</div>
+<div class="smaller">
+Tutorial created using:
+Windows Vista || JDK 1.6.0_11 || Eclipse JEE Ganymede SR1 (Eclipse 3.4.1)</div>
+</div>
+<hr>
+<br>
+
+<p>The prototype pattern is a creational design pattern. In the prototype pattern, a new object is created by cloning an existing object. In Java<a class="extlink2" href="http://java.sun.com/" title="Go to Site for &#39;Sun Java Developers Site&#39;">S</a><a class="extlink" href="http://en.wikipedia.org/wiki/Java_(programming_language)" title="Go to &#39;Java (programming language)&#39; in Wikipedia">W</a>, the clone() method is an implementation of this design pattern. The prototype pattern can be a useful way of creating copies of objects. One example of how this can be useful is if an original object is created with a resource such as a data stream that may not be available at the time that a clone of the object is needed. Another example is if the original object creation involves a significant time commitment, such as reading data from a database<a class="extlink" href="http://en.wikipedia.org/wiki/Database" title="Go to &#39;Database&#39; in Wikipedia">W</a> or over a network. An added benefit of the prototype pattern is that it can reduce class proliferation in a project by avoiding factory proliferation. </p>
+
+<p>Normally in Java, if you'd like to use cloning (ie, the prototype pattern), you can utilize the clone() method and the Cloneable interface. By default, clone() performs a shallow copy. In <a title="How do I perform a deep clone using Serializable?" href="https://www.avajava.com/tutorials/lessons/how-do-i-perform-a-deep-clone-using-serializable.html">another tutorial</a>,  we demonstrate how Serializable can be used to simplify deep copying. </p>
+
+<p>However, we can implement our own prototype pattern. To do so, we'll create a Prototype interface that features a doClone() method. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/prototype-pattern/Prototype.java">Prototype.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">interface</span> Prototype {
+
+	<span class="javaKeyword">public</span> Prototype doClone();
+
+}
+</pre>
+<p>The Person class implements the doClone() method. This method creates a new Person object and clones the name field. It returns the newly cloned Person object. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/prototype-pattern/Person.java">Person.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> Person <span class="javaKeyword">implements</span> Prototype {
+
+	String name;
+
+	<span class="javaKeyword">public</span> Person(String name) {
+		<span class="javaKeyword">this</span>.name = name;
+	}
+
+	@Override
+	<span class="javaKeyword">public</span> Prototype doClone() {
+		<span class="javaKeyword">return</span> <span class="javaKeyword">new</span> Person(name);
+	}
+
+	<span class="javaKeyword">public</span> String toString() {
+		<span class="javaKeyword">return</span> <span class="javaString">"This person is named "</span> + name;
+	}
+}
+</pre>
+<p>The Dog class also implements the doClone() method. This method creates a new Dog object and clones the sound field. The cloned Dog object is returned. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/prototype-pattern/Dog.java">Dog.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> Dog <span class="javaKeyword">implements</span> Prototype {
+
+	String sound;
+
+	<span class="javaKeyword">public</span> Dog(String sound) {
+		<span class="javaKeyword">this</span>.sound = sound;
+	}
+
+	@Override
+	<span class="javaKeyword">public</span> Prototype doClone() {
+		<span class="javaKeyword">return</span> <span class="javaKeyword">new</span> Dog(sound);
+	}
+
+	<span class="javaKeyword">public</span> String toString() {
+		<span class="javaKeyword">return</span> <span class="javaString">"This dog says "</span> + sound;
+	}
+}
+</pre>
+<p>The Demo class creates a Person object and then clones it to a second Person object. It then creates a Dog object and clones it to a second Dog object. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/prototype-pattern/Demo.java">Demo.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> Demo {
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">static</span> <span class="javaKeyword">void</span> main(String[] args) {
+
+		Person person1 = <span class="javaKeyword">new</span> Person(<span class="javaString">"Fred"</span>);
+		System.out.println(<span class="javaString">"person 1:"</span> + person1);
+		Person person2 = (Person) person1.doClone();
+		System.out.println(<span class="javaString">"person 2:"</span> + person2);
+
+		Dog dog1 = <span class="javaKeyword">new</span> Dog(<span class="javaString">"Wooof!"</span>);
+		System.out.println(<span class="javaString">"dog 1:"</span> + dog1);
+		Dog dog2 = (Dog) dog1.doClone();
+		System.out.println(<span class="javaString">"dog 2:"</span> + dog2);
+
+	}
+
+}
+</pre>
+<p>The console output of executing Demo is shown here. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/prototype-pattern/console.txt">Console Output</a></h3>
+<pre>person 1:This person is named Fred
+person 2:This person is named Fred
+dog 1:This dog says Wooof!
+dog 2:This dog says Wooof!
+</pre>
+
+<p></p>
+
+<hr>
+
+<!-- start related tutorials -->
+<div>
+<h3>Related Tutorials:</h3>
+<ul style="margin-left: 1em;">
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Creational Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/singleton-pattern.html" title="This Java tutorial describes the singleton pattern, a popular creational design pattern.">Singleton Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Creational Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/factory-pattern.html" title="This Java tutorial describes the factory pattern, a popular creational design pattern.">Factory Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Creational Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/abstract-factory-pattern.html" title="This Java tutorial describes the abstract factory pattern, a popular creational design pattern.">Abstract Factory Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Creational Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/builder-pattern.html" title="This Java tutorial describes the builder pattern, a creational design pattern.">Builder Pattern</a>
+</li>
+</ul>
+</div>
+<!-- end related tutorials -->
+
+<!-- Amazon Ads is off  -->
+	<!-- Google Ads is off  -->
+</td></tr></tbody></table>
+</div>
+		</div>
+
+		<div class="clear">&nbsp;</div>		
+	</div>
+	<div id="bottombreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./Prototype Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./Prototype Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Creational Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Builder Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/builder-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./Prototype Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;5.
+Prototype Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Adapter Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/adapter-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./Prototype Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="footer">
+<p>Copyright © 2014 
+Code Strategies 
+		| Template: <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>
+		| <a href="http://www.avajava.com/contact.jsp">Contact</a>
+<!-- 		| <a href="http://www.avajava.com/about.jsp" title="About">About</a> -->
+		</p>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./Prototype Pattern - Web Tutorials - avajava.com_files/ga.js.tải xuống" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4759485-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+
+</body></html>

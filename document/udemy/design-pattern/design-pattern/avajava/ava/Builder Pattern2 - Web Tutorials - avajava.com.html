@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0069)https://www.avajava.com/tutorials/lessons/builder-pattern.html?page=2 -->
+<html><link type="text/css" id="dark-mode" rel="stylesheet" href="https://www.avajava.com/tutorials/lessons/builder-pattern.html?page=2"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Builder Pattern - Web Tutorials - avajava.com</title>
+<meta name="keywords" content="Java, builder pattern, design pattern, creational pattern">
+<meta name="description" content="This Java tutorial describes the builder pattern, a creational design pattern.">
+<link href="./Builder Pattern2 - Web Tutorials - avajava.com_files/default.css" rel="stylesheet" type="text/css">
+<link href="./Builder Pattern2 - Web Tutorials - avajava.com_files/codeformat.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+<link rel="icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+</head>
+<body data-gr-c-s-loaded="true">
+<div id="outer">
+	<div id="header">
+		<h1>
+		<a href="https://www.avajava.com/tutorials">
+		AVAJAVA Web Tutorials</a>
+		</h1>
+		
+		<h2 id="firsth2">
+			Total Categories: 24,
+			Total Tutorials: 508</h2>
+	
+			<h2 id="secondh2">
+				Design Patterns:
+				4 of
+				22 tutorials
+				</h2>
+				<h2 id="thirdh2">
+				Builder Pattern</h2>
+			</div>
+	<div id="menu">
+		<ul>
+<!-- 
+		<li class="first">"Java forwards and backwards"</li>
+ --> 
+<!-- 		<li><a class="toptext" href="http://www.jarvana.com/" title="Search Maven Repository">Maven Repository Search</a></li>
+		<li><a class="toptext" href="http://www.jarvana.com/jarvana/doc" title="Search for Javadocs Classes and Projects">Javadoc Search</a></li> -->			
+
+		</ul>
+		<div id="search">
+		Search Tutorials:
+		<form style="display: inline" action="https://www.avajava.com/tutorials/search" method="get" name="searchForm">
+		<input style="margin-bottom: 2px;" type="text" size="20" maxlength="50" name="q" value="">
+		<input id="searchbutton" type="submit" value="  Go  ">
+		</form>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="topbreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./Builder Pattern2 - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./Builder Pattern2 - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Creational Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Abstract Factory Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/abstract-factory-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./Builder Pattern2 - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;4.
+Builder Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Prototype Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/prototype-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./Builder Pattern2 - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="content">
+		<div id="primaryContentContainer">
+			<div id="primaryContent">
+<table width="100%">
+	<tbody><tr>
+		<td id="sidemenu">
+		<div id="sidemenucats"><strong>Tutorial Categories:</strong> <ol><li><a href="https://www.avajava.com/tutorials/categories/ajax">Ajax</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/ant">Ant</a> (16)</li><li><a href="https://www.avajava.com/tutorials/categories/apache-web-server">Apache Web Server</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/bioinformatics">Bioinformatics</a> (10)</li><li><a href="https://www.avajava.com/tutorials/categories/cascading-style-sheets">Cascading Style Sheets</a> (47)</li><li><a href="https://www.avajava.com/tutorials/categories/classes-and-objects">Classes and Objects</a> (14)</li><li><a href="https://www.avajava.com/tutorials/categories/database">Database</a> (13)</li><li><a class="currentcategory" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a> (22)</li><li><a href="https://www.avajava.com/tutorials/categories/eclipse">Eclipse</a> (39)</li><li><a href="https://www.avajava.com/tutorials/categories/files">Files</a> (62)</li><li><a href="https://www.avajava.com/tutorials/categories/general-java">General Java</a> (69)</li><li><a href="https://www.avajava.com/tutorials/categories/jsps">JSPs</a> (9)</li><li><a href="https://www.avajava.com/tutorials/categories/java-basics">Java Basics</a> (11)</li><li><a href="https://www.avajava.com/tutorials/categories/linux">Linux</a> (23)</li><li><a href="https://www.avajava.com/tutorials/categories/logging">Logging</a> (5)</li><li><a href="https://www.avajava.com/tutorials/categories/maven">Maven</a> (88)</li><li><a href="https://www.avajava.com/tutorials/categories/search">Search</a> (12)</li><li><a href="https://www.avajava.com/tutorials/categories/servlets">Servlets</a> (20)</li><li><a href="https://www.avajava.com/tutorials/categories/struts">Struts</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/text">Text</a> (19)</li><li><a href="https://www.avajava.com/tutorials/categories/tomcat">Tomcat</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/version-control">Version Control</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/windows">Windows</a> (2)</li><li><a href="https://www.avajava.com/tutorials/categories/xml">XML</a> (1)</li></ol><!-- Google Ads is off  -->
+			<!-- Amazon Ads is off  -->
+			</div>
+		</td>
+
+		<td id="mainside"><!-- Google Ads is off  -->
+<hr>
+<div class="accentuate">
+<div class="title">Builder Pattern</div>
+<div>Author: Deron Eriksson</div>
+<div class="smaller">Description: This Java tutorial describes the builder pattern, a creational design pattern.</div>
+<div class="smaller">
+Tutorial created using:
+Windows Vista || JDK 1.6.0_11 || Eclipse JEE Ganymede SR1 (Eclipse 3.4.1)</div>
+</div>
+<hr>
+<br>
+
+<div style="font-weight: bold">Page: <a href="https://www.avajava.com/tutorials/lessons/builder-pattern.html?page=1" title="Go to page 1">&lt;</a> <a href="https://www.avajava.com/tutorials/lessons/builder-pattern.html?page=1" title="Go to page 1">1</a> 2</div><br>
+<p class="continue">(Continued from page 1) </p><p>Our Director class is MealDirector. It takes a MealBuilder as a parameter in its constructor. Thus, a different type of meal will be assembled by the MealDirector depending on the Concrete Builder passed in to the constructor. The assembly of the meal (Product) takes place in the constructMeal() method of the Director. This method spells out the parts of the meal that will be assembled. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/builder-pattern/MealDirector.java">MealDirector.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> MealDirector {
+
+	<span class="javaKeyword">private</span> MealBuilder mealBuilder = null;
+
+	<span class="javaKeyword">public</span> MealDirector(MealBuilder mealBuilder) {
+		<span class="javaKeyword">this</span>.mealBuilder = mealBuilder;
+	}
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> constructMeal() {
+		mealBuilder.buildDrink();
+		mealBuilder.buildMainCourse();
+		mealBuilder.buildSide();
+	}
+
+	<span class="javaKeyword">public</span> Meal getMeal() {
+		<span class="javaKeyword">return</span> mealBuilder.getMeal();
+	}
+
+}
+</pre>
+<p>The Demo class lets us demonstrate our builder pattern. First, our director builds an Italian meal. An ItalianMealBuilder is passed to the MealDirector's constructor. The meal is constructed via mealDirector.constructMeal(). The meal is obtained from mealDirector via mealDirector.getMeal(). The Italian meal is displayed. After this, we perform the same process to build and display a Japanese meal. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/builder-pattern/Demo.java">Demo.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> Demo {
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">static</span> <span class="javaKeyword">void</span> main(String[] args) {
+
+		MealBuilder mealBuilder = <span class="javaKeyword">new</span> ItalianMealBuilder();
+		MealDirector mealDirector = <span class="javaKeyword">new</span> MealDirector(mealBuilder);
+		mealDirector.constructMeal();
+		Meal meal = mealDirector.getMeal();
+		System.out.println(<span class="javaString">"meal is: "</span> + meal);
+		
+		mealBuilder = <span class="javaKeyword">new</span> JapaneseMealBuilder();
+		mealDirector = <span class="javaKeyword">new</span> MealDirector(mealBuilder);
+		mealDirector.constructMeal();
+		meal = mealDirector.getMeal();
+		System.out.println(<span class="javaString">"meal is: "</span> + meal);
+	}
+
+}
+</pre>
+<p>The console output of executing Demo is shown here. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/builder-pattern/console.txt">Console Output</a></h3>
+<pre>meal is: drink:red wine, main course:pizza, side:bread
+meal is: drink:sake, main course:chicken teriyaki, side:miso soup
+</pre>
+
+<p>Notice that if we'd like to create a new type of meal, we can do so by implementing a new Concrete Builder (ie, SwedishMealBuilder, FrenchMealBuilder, etc), which we'd pass to the MealDirector. If we'd like the meal to be constructed of different parts (ie, no drink), we can alter the construction process in MealDirector. Thus, construction process has been separated to the Director, and the data representation is controlled by the Concrete Builders that implement the Builder interface. </p>
+
+
+<div style="font-weight: bold">Page: <a href="https://www.avajava.com/tutorials/lessons/builder-pattern.html?page=1" title="Go to page 1">&lt;</a> <a href="https://www.avajava.com/tutorials/lessons/builder-pattern.html?page=1" title="Go to page 1">1</a> 2</div><br>
+<hr>
+
+<!-- start related tutorials -->
+<div>
+<h3>Related Tutorials:</h3>
+<ul style="margin-left: 1em;">
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Creational Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/singleton-pattern.html" title="This Java tutorial describes the singleton pattern, a popular creational design pattern.">Singleton Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Creational Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/factory-pattern.html" title="This Java tutorial describes the factory pattern, a popular creational design pattern.">Factory Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Creational Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/abstract-factory-pattern.html" title="This Java tutorial describes the abstract factory pattern, a popular creational design pattern.">Abstract Factory Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Creational Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/prototype-pattern.html" title="This Java tutorial describes the prototype pattern, a creational design pattern.">Prototype Pattern</a>
+</li>
+</ul>
+</div>
+<!-- end related tutorials -->
+
+<!-- Amazon Ads is off  -->
+	<!-- Google Ads is off  -->
+</td></tr></tbody></table>
+</div>
+		</div>
+
+		<div class="clear">&nbsp;</div>		
+	</div>
+	<div id="bottombreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./Builder Pattern2 - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./Builder Pattern2 - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Creational Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Abstract Factory Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/abstract-factory-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./Builder Pattern2 - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;4.
+Builder Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Prototype Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/prototype-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./Builder Pattern2 - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="footer">
+<p>Copyright © 2014 
+Code Strategies 
+		| Template: <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>
+		| <a href="http://www.avajava.com/contact.jsp">Contact</a>
+<!-- 		| <a href="http://www.avajava.com/about.jsp" title="About">About</a> -->
+		</p>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./Builder Pattern2 - Web Tutorials - avajava.com_files/ga.js.download" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4759485-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+
+</body></html>

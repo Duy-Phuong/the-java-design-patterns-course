@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0064)https://www.avajava.com/tutorials/lessons/composite-pattern.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Composite Pattern - Web Tutorials - avajava.com</title>
+<meta name="keywords" content="Java, composite pattern, design pattern, structural pattern">
+<meta name="description" content="This Java tutorial describes the composite pattern, a structural design pattern.">
+<link href="./Composite Pattern - Web Tutorials - avajava.com_files/default.css" rel="stylesheet" type="text/css">
+<link href="./Composite Pattern - Web Tutorials - avajava.com_files/codeformat.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+<link rel="icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+</head>
+<body>
+<div id="outer">
+	<div id="header">
+		<h1>
+		<a href="https://www.avajava.com/tutorials">
+		AVAJAVA Web Tutorials</a>
+		</h1>
+		
+		<h2 id="firsth2">
+			Total Categories: 24,
+			Total Tutorials: 508</h2>
+	
+			<h2 id="secondh2">
+				Design Patterns:
+				7 of
+				22 tutorials
+				</h2>
+				<h2 id="thirdh2">
+				Composite Pattern</h2>
+			</div>
+	<div id="menu">
+		<ul>
+<!-- 
+		<li class="first">"Java forwards and backwards"</li>
+ --> 
+<!-- 		<li><a class="toptext" href="http://www.jarvana.com/" title="Search Maven Repository">Maven Repository Search</a></li>
+		<li><a class="toptext" href="http://www.jarvana.com/jarvana/doc" title="Search for Javadocs Classes and Projects">Javadoc Search</a></li> -->			
+
+		</ul>
+		<div id="search">
+		Search Tutorials:
+		<form style="display: inline" action="https://www.avajava.com/tutorials/search" method="get" name="searchForm">
+		<input style="margin-bottom: 2px;" type="text" size="20" maxlength="50" name="q" value="">
+		<input id="searchbutton" type="submit" value="  Go  ">
+		</form>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="topbreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./Composite Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./Composite Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Structural Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Adapter Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/adapter-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./Composite Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;7.
+Composite Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Proxy Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/proxy-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./Composite Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="content">
+		<div id="primaryContentContainer">
+			<div id="primaryContent">
+<table width="100%">
+	<tbody><tr>
+		<td id="sidemenu">
+		<div id="sidemenucats"><strong>Tutorial Categories:</strong> <ol><li><a href="https://www.avajava.com/tutorials/categories/ajax">Ajax</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/ant">Ant</a> (16)</li><li><a href="https://www.avajava.com/tutorials/categories/apache-web-server">Apache Web Server</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/bioinformatics">Bioinformatics</a> (10)</li><li><a href="https://www.avajava.com/tutorials/categories/cascading-style-sheets">Cascading Style Sheets</a> (47)</li><li><a href="https://www.avajava.com/tutorials/categories/classes-and-objects">Classes and Objects</a> (14)</li><li><a href="https://www.avajava.com/tutorials/categories/database">Database</a> (13)</li><li><a class="currentcategory" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a> (22)</li><li><a href="https://www.avajava.com/tutorials/categories/eclipse">Eclipse</a> (39)</li><li><a href="https://www.avajava.com/tutorials/categories/files">Files</a> (62)</li><li><a href="https://www.avajava.com/tutorials/categories/general-java">General Java</a> (69)</li><li><a href="https://www.avajava.com/tutorials/categories/jsps">JSPs</a> (9)</li><li><a href="https://www.avajava.com/tutorials/categories/java-basics">Java Basics</a> (11)</li><li><a href="https://www.avajava.com/tutorials/categories/linux">Linux</a> (23)</li><li><a href="https://www.avajava.com/tutorials/categories/logging">Logging</a> (5)</li><li><a href="https://www.avajava.com/tutorials/categories/maven">Maven</a> (88)</li><li><a href="https://www.avajava.com/tutorials/categories/search">Search</a> (12)</li><li><a href="https://www.avajava.com/tutorials/categories/servlets">Servlets</a> (20)</li><li><a href="https://www.avajava.com/tutorials/categories/struts">Struts</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/text">Text</a> (19)</li><li><a href="https://www.avajava.com/tutorials/categories/tomcat">Tomcat</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/version-control">Version Control</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/windows">Windows</a> (2)</li><li><a href="https://www.avajava.com/tutorials/categories/xml">XML</a> (1)</li></ol><!-- Google Ads is off  -->
+			<!-- Amazon Ads is off  -->
+			</div>
+		</td>
+
+		<td id="mainside"><!-- Google Ads is off  -->
+<hr>
+<div class="accentuate">
+<div class="title">Composite Pattern</div>
+<div>Author: Deron Eriksson</div>
+<div class="smaller">Description: This Java tutorial describes the composite pattern, a structural design pattern.</div>
+<div class="smaller">
+Tutorial created using:
+Windows Vista || JDK 1.6.0_11 || Eclipse JEE Ganymede SR1 (Eclipse 3.4.1)</div>
+</div>
+<hr>
+<br>
+
+<div style="font-weight: bold">Page: &nbsp;&nbsp; 1 <a href="https://www.avajava.com/tutorials/lessons/composite-pattern.html?page=2" title="Go to page 2">2</a>&nbsp;<a href="https://www.avajava.com/tutorials/lessons/composite-pattern.html?page=2" title="Go to page 2">&gt;</a></div><br>
+<p>The composite pattern is a structural design pattern. In the composite pattern, a tree structure exists where identical operations can be performed on leaves and nodes. A node in a tree is a class that can have children. A node class is a 'composite' class. A leaf in a tree is a 'primitive' class that does not have children. The children of a composite can be leaves or other composites. </p>
+
+<p>The leaf class and the composite class share a common 'component' interface that defines the common operations that can be performed on leaves and composites. When an operation on a composite is performed, this operation is performed on all children of the composite, whether they are leaves or composites. Thus, the composite pattern can be used to perform common operations on the objects that compose a tree. </p>
+
+<p>The Gang of Four description of the composite pattern defines a client's interaction with the tree struture via a Component interface, where this interface includes the common operations on the composite and leaf classes, and the add/remove/get operations on the composites of the tree. This seems slightly awkward since a leaf does not implement the add/remove/get operations. In my opinion, in Java<a class="extlink2" href="http://java.sun.com/" title="Go to Site for &#39;Sun Java Developers Site&#39;">S</a><a class="extlink" href="http://en.wikipedia.org/wiki/Java_(programming_language)" title="Go to &#39;Java (programming language)&#39; in Wikipedia">W</a> it makes more sense to define the common leaf/composite operations on a Component interface, but to put the add/remove/get composite operations in a separate interface or to simply implement them in the composite class. </p>
+
+<p>Now we'll look at an example of the composite pattern. First, we'll declare a Component interface that declares the operations that are common for the composite class and the leaf class. This allows us to perform operations on composites and leaves using one standard interface. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/composite-pattern/Component.java">Component.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">interface</span> Component {
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> sayHello();
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> sayGoodbye();
+
+}
+</pre>
+<p>The Leaf class has a name field and implements the sayHello() and sayGoodbye() methods of the Component interface by outputting messages to standard output. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/composite-pattern/Leaf.java">Leaf.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> Leaf <span class="javaKeyword">implements</span> Component {
+
+	String name;
+
+	<span class="javaKeyword">public</span> Leaf(String name) {
+		<span class="javaKeyword">this</span>.name = name;
+	}
+
+	@Override
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> sayHello() {
+		System.out.println(name + <span class="javaString">" leaf says hello"</span>);
+	}
+
+	@Override
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> sayGoodbye() {
+		System.out.println(name + <span class="javaString">" leaf says goodbye"</span>);
+	}
+
+}
+</pre>
+<p>The Composite class implements the Component interface. It implements the sayHello() and sayGoodbye() methods by calling these same methods on all of its children, which are Components (since they can be both Leaf objects and Composite objects, which both implement the Component interface). </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/composite-pattern/Composite.java">Composite.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">import</span> java.util.ArrayList;
+<span class="javaKeyword">import</span> java.util.List;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> Composite <span class="javaKeyword">implements</span> Component {
+
+	List&lt;Component&gt; components = <span class="javaKeyword">new</span> ArrayList&lt;Component&gt;();
+
+	@Override
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> sayHello() {
+		<span class="javaKeyword">for</span> (Component component : components) {
+			component.sayHello();
+		}
+	}
+
+	@Override
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> sayGoodbye() {
+		<span class="javaKeyword">for</span> (Component component : components) {
+			component.sayGoodbye();
+		}
+	}
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> add(Component component) {
+		components.add(component);
+	}
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> remove(Component component) {
+		components.remove(component);
+	}
+
+	<span class="javaKeyword">public</span> List&lt;Component&gt; getComponents() {
+		<span class="javaKeyword">return</span> components;
+	}
+
+	<span class="javaKeyword">public</span> Component getComponent(<span class="javaKeyword">int</span> index) {
+		<span class="javaKeyword">return</span> components.get(index);
+	}
+
+}
+</pre>
+
+<p class="continue">(Continued on page 2)</p><div style="font-weight: bold">Page: &nbsp;&nbsp; 1 <a href="https://www.avajava.com/tutorials/lessons/composite-pattern.html?page=2" title="Go to page 2">2</a>&nbsp;<a href="https://www.avajava.com/tutorials/lessons/composite-pattern.html?page=2" title="Go to page 2">&gt;</a></div><br>
+<hr>
+
+<!-- start related tutorials -->
+<div>
+<h3>Related Tutorials:</h3>
+<ul style="margin-left: 1em;">
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/adapter-pattern.html" title="This Java tutorial describes the adapter pattern, a structural design pattern.">Adapter Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/proxy-pattern.html" title="This Java tutorial describes the proxy pattern, a structural design pattern.">Proxy Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/flyweight-pattern.html" title="This Java tutorial describes the flyweight pattern, a structural design pattern.">Flyweight Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/facade-pattern.html" title="This Java tutorial describes the facade pattern, a structural design pattern.">Facade Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/bridge-pattern.html" title="This Java tutorial describes the bridge pattern, a structural design pattern.">Bridge Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/decorator-pattern.html" title="This Java tutorial describes the decorator pattern, a structural design pattern.">Decorator Pattern</a>
+</li>
+</ul>
+</div>
+<!-- end related tutorials -->
+
+<!-- Amazon Ads is off  -->
+	<!-- Google Ads is off  -->
+</td></tr></tbody></table>
+</div>
+		</div>
+
+		<div class="clear">&nbsp;</div>		
+	</div>
+	<div id="bottombreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./Composite Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./Composite Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Structural Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Adapter Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/adapter-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./Composite Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;7.
+Composite Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Proxy Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/proxy-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./Composite Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="footer">
+<p>Copyright © 2014 
+Code Strategies 
+		| Template: <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>
+		| <a href="http://www.avajava.com/contact.jsp">Contact</a>
+<!-- 		| <a href="http://www.avajava.com/about.jsp" title="About">About</a> -->
+		</p>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./Composite Pattern - Web Tutorials - avajava.com_files/ga.js.tải xuống" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4759485-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+
+</body></html>

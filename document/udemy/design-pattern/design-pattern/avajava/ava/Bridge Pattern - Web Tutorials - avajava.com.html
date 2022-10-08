@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0061)https://www.avajava.com/tutorials/lessons/bridge-pattern.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Bridge Pattern - Web Tutorials - avajava.com</title>
+<meta name="keywords" content="Java, bridge pattern, design pattern, structural pattern">
+<meta name="description" content="This Java tutorial describes the bridge pattern, a structural design pattern.">
+<link href="./Bridge Pattern - Web Tutorials - avajava.com_files/default.css" rel="stylesheet" type="text/css">
+<link href="./Bridge Pattern - Web Tutorials - avajava.com_files/codeformat.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+<link rel="icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+</head>
+<body>
+<div id="outer">
+	<div id="header">
+		<h1>
+		<a href="https://www.avajava.com/tutorials">
+		AVAJAVA Web Tutorials</a>
+		</h1>
+		
+		<h2 id="firsth2">
+			Total Categories: 24,
+			Total Tutorials: 508</h2>
+	
+			<h2 id="secondh2">
+				Design Patterns:
+				11 of
+				22 tutorials
+				</h2>
+				<h2 id="thirdh2">
+				Bridge Pattern</h2>
+			</div>
+	<div id="menu">
+		<ul>
+<!-- 
+		<li class="first">"Java forwards and backwards"</li>
+ --> 
+<!-- 		<li><a class="toptext" href="http://www.jarvana.com/" title="Search Maven Repository">Maven Repository Search</a></li>
+		<li><a class="toptext" href="http://www.jarvana.com/jarvana/doc" title="Search for Javadocs Classes and Projects">Javadoc Search</a></li> -->			
+
+		</ul>
+		<div id="search">
+		Search Tutorials:
+		<form style="display: inline" action="https://www.avajava.com/tutorials/search" method="get" name="searchForm">
+		<input style="margin-bottom: 2px;" type="text" size="20" maxlength="50" name="q" value="">
+		<input id="searchbutton" type="submit" value="  Go  ">
+		</form>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="topbreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./Bridge Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./Bridge Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Structural Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Facade Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/facade-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./Bridge Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;11.
+Bridge Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Decorator Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/decorator-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./Bridge Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="content">
+		<div id="primaryContentContainer">
+			<div id="primaryContent">
+<table width="100%">
+	<tbody><tr>
+		<td id="sidemenu">
+		<div id="sidemenucats"><strong>Tutorial Categories:</strong> <ol><li><a href="https://www.avajava.com/tutorials/categories/ajax">Ajax</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/ant">Ant</a> (16)</li><li><a href="https://www.avajava.com/tutorials/categories/apache-web-server">Apache Web Server</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/bioinformatics">Bioinformatics</a> (10)</li><li><a href="https://www.avajava.com/tutorials/categories/cascading-style-sheets">Cascading Style Sheets</a> (47)</li><li><a href="https://www.avajava.com/tutorials/categories/classes-and-objects">Classes and Objects</a> (14)</li><li><a href="https://www.avajava.com/tutorials/categories/database">Database</a> (13)</li><li><a class="currentcategory" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a> (22)</li><li><a href="https://www.avajava.com/tutorials/categories/eclipse">Eclipse</a> (39)</li><li><a href="https://www.avajava.com/tutorials/categories/files">Files</a> (62)</li><li><a href="https://www.avajava.com/tutorials/categories/general-java">General Java</a> (69)</li><li><a href="https://www.avajava.com/tutorials/categories/jsps">JSPs</a> (9)</li><li><a href="https://www.avajava.com/tutorials/categories/java-basics">Java Basics</a> (11)</li><li><a href="https://www.avajava.com/tutorials/categories/linux">Linux</a> (23)</li><li><a href="https://www.avajava.com/tutorials/categories/logging">Logging</a> (5)</li><li><a href="https://www.avajava.com/tutorials/categories/maven">Maven</a> (88)</li><li><a href="https://www.avajava.com/tutorials/categories/search">Search</a> (12)</li><li><a href="https://www.avajava.com/tutorials/categories/servlets">Servlets</a> (20)</li><li><a href="https://www.avajava.com/tutorials/categories/struts">Struts</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/text">Text</a> (19)</li><li><a href="https://www.avajava.com/tutorials/categories/tomcat">Tomcat</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/version-control">Version Control</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/windows">Windows</a> (2)</li><li><a href="https://www.avajava.com/tutorials/categories/xml">XML</a> (1)</li></ol><!-- Google Ads is off  -->
+			<!-- Amazon Ads is off  -->
+			</div>
+		</td>
+
+		<td id="mainside"><!-- Google Ads is off  -->
+<hr>
+<div class="accentuate">
+<div class="title">Bridge Pattern</div>
+<div>Author: Deron Eriksson</div>
+<div class="smaller">Description: This Java tutorial describes the bridge pattern, a structural design pattern.</div>
+<div class="smaller">
+Tutorial created using:
+Windows Vista || JDK 1.6.0_11 || Eclipse JEE Ganymede SR1 (Eclipse 3.4.1)</div>
+</div>
+<hr>
+<br>
+
+<div style="font-weight: bold">Page: &nbsp;&nbsp; 1 <a href="https://www.avajava.com/tutorials/lessons/bridge-pattern.html?page=2" title="Go to page 2">2</a>&nbsp;<a href="https://www.avajava.com/tutorials/lessons/bridge-pattern.html?page=2" title="Go to page 2">&gt;</a></div><br>
+<p>The bridge pattern is a structural design pattern. In the bridge pattern, we separate an abstraction and its implementation and develop separate inheritance structures for both the abstraction and the implementor. The abstraction is an interface or abstract class, and the implementor is likewise an interface or abstract class. The abstraction contains a reference to the implementor. Children of the abstraction are referred to as refined abstractions, and children of the implementor are concrete implementors. Since we can change the reference to the implementor in the abstraction, we are able to change the abstraction's implementor at run-time. Changes to the implementor do not affect client code. </p>
+
+<p>The bridge pattern can be demonstrated with an example. Suppose we have a Vehicle class. We can extract out the implementation of the engine into an Engine class. We can reference this Engine implementor in our Vehicle via an Engine field. We'll declare Vehicle to be an abstract class. Subclasses of Vehicle need to implement the drive() method. Notice that the Engine reference can be changed via the setEngine() method. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/bridge-pattern/Vehicle.java">Vehicle.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">abstract</span> <span class="javaKeyword">class</span> Vehicle {
+
+	Engine engine;
+	<span class="javaKeyword">int</span> weightInKilos;
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">abstract</span> <span class="javaKeyword">void</span> drive();
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> setEngine(Engine engine) {
+		<span class="javaKeyword">this</span>.engine = engine;
+	}
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> reportOnSpeed(<span class="javaKeyword">int</span> horsepower) {
+		<span class="javaKeyword">int</span> ratio = weightInKilos / horsepower;
+		<span class="javaKeyword">if</span> (ratio &lt; 3) {
+			System.out.println(<span class="javaString">"The vehicle is going at a fast speed."</span>);
+		} <span class="javaKeyword">else</span> <span class="javaKeyword">if</span> ((ratio &gt;= 3) &amp;&amp; (ratio &lt; 8)) {
+			System.out.println(<span class="javaString">"The vehicle is going an average speed."</span>);
+		} <span class="javaKeyword">else</span> {
+			System.out.println(<span class="javaString">"The vehicle is going at a slow speed."</span>);
+		}
+	}
+
+}
+</pre>
+<p>BigBus is a subclass of Vehicle. It has a weight of 3000 kg. Its drive() method displays a message, calls the engine's go() method, and then calls reportOnSpeed() with the horsepower of the engine to report on how fast the vehicle is moving. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/bridge-pattern/BigBus.java">BigBus.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> BigBus <span class="javaKeyword">extends</span> Vehicle {
+
+	<span class="javaKeyword">public</span> BigBus(Engine engine) {
+		<span class="javaKeyword">this</span>.weightInKilos = 3000;
+		<span class="javaKeyword">this</span>.engine = engine;
+	}
+
+	@Override
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> drive() {
+		System.out.println(<span class="javaString">"\nThe big bus is driving"</span>);
+		<span class="javaKeyword">int</span> horsepower = engine.go();
+		reportOnSpeed(horsepower);
+	}
+
+}
+</pre>
+<p>SmallCar is similar to BigBus but is much lighter. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/bridge-pattern/SmallCar.java">SmallCar.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> SmallCar <span class="javaKeyword">extends</span> Vehicle {
+
+	<span class="javaKeyword">public</span> SmallCar(Engine engine) {
+		<span class="javaKeyword">this</span>.weightInKilos = 600;
+		<span class="javaKeyword">this</span>.engine = engine;
+	}
+
+	@Override
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> drive() {
+		System.out.println(<span class="javaString">"\nThe small car is driving"</span>);
+		<span class="javaKeyword">int</span> horsepower = engine.go();
+		reportOnSpeed(horsepower);
+	}
+
+}
+</pre>
+
+<p class="continue">(Continued on page 2)</p><div style="font-weight: bold">Page: &nbsp;&nbsp; 1 <a href="https://www.avajava.com/tutorials/lessons/bridge-pattern.html?page=2" title="Go to page 2">2</a>&nbsp;<a href="https://www.avajava.com/tutorials/lessons/bridge-pattern.html?page=2" title="Go to page 2">&gt;</a></div><br>
+<hr>
+
+<!-- start related tutorials -->
+<div>
+<h3>Related Tutorials:</h3>
+<ul style="margin-left: 1em;">
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/adapter-pattern.html" title="This Java tutorial describes the adapter pattern, a structural design pattern.">Adapter Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/composite-pattern.html" title="This Java tutorial describes the composite pattern, a structural design pattern.">Composite Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/proxy-pattern.html" title="This Java tutorial describes the proxy pattern, a structural design pattern.">Proxy Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/flyweight-pattern.html" title="This Java tutorial describes the flyweight pattern, a structural design pattern.">Flyweight Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/facade-pattern.html" title="This Java tutorial describes the facade pattern, a structural design pattern.">Facade Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/decorator-pattern.html" title="This Java tutorial describes the decorator pattern, a structural design pattern.">Decorator Pattern</a>
+</li>
+</ul>
+</div>
+<!-- end related tutorials -->
+
+<!-- Amazon Ads is off  -->
+	<!-- Google Ads is off  -->
+</td></tr></tbody></table>
+</div>
+		</div>
+
+		<div class="clear">&nbsp;</div>		
+	</div>
+	<div id="bottombreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./Bridge Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./Bridge Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Structural Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Facade Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/facade-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./Bridge Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;11.
+Bridge Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Decorator Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/decorator-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./Bridge Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="footer">
+<p>Copyright © 2014 
+Code Strategies 
+		| Template: <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>
+		| <a href="http://www.avajava.com/contact.jsp">Contact</a>
+<!-- 		| <a href="http://www.avajava.com/about.jsp" title="About">About</a> -->
+		</p>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./Bridge Pattern - Web Tutorials - avajava.com_files/ga.js.tải xuống" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4759485-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+
+</body></html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0071)https://www.avajava.com/tutorials/lessons/abstract-factory-pattern.html -->
+<html><link type="text/css" id="dark-mode" rel="stylesheet" href="https://www.avajava.com/tutorials/lessons/abstract-factory-pattern.html"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Abstract Factory Pattern - Web Tutorials - avajava.com</title>
+<meta name="keywords" content="Java, abstract factory pattern, design pattern, creational pattern">
+<meta name="description" content="This Java tutorial describes the abstract factory pattern, a popular creational design pattern.">
+<link href="./Abstract Factory Pattern - Web Tutorials - avajava.com_files/default.css" rel="stylesheet" type="text/css">
+<link href="./Abstract Factory Pattern - Web Tutorials - avajava.com_files/codeformat.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+<link rel="icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+</head>
+<body data-gr-c-s-loaded="true">
+<div id="outer">
+	<div id="header">
+		<h1>
+		<a href="https://www.avajava.com/tutorials">
+		AVAJAVA Web Tutorials</a>
+		</h1>
+		
+		<h2 id="firsth2">
+			Total Categories: 24,
+			Total Tutorials: 508</h2>
+	
+			<h2 id="secondh2">
+				Design Patterns:
+				3 of
+				22 tutorials
+				</h2>
+				<h2 id="thirdh2">
+				Abstract Factory Pattern</h2>
+			</div>
+	<div id="menu">
+		<ul>
+<!-- 
+		<li class="first">"Java forwards and backwards"</li>
+ --> 
+<!-- 		<li><a class="toptext" href="http://www.jarvana.com/" title="Search Maven Repository">Maven Repository Search</a></li>
+		<li><a class="toptext" href="http://www.jarvana.com/jarvana/doc" title="Search for Javadocs Classes and Projects">Javadoc Search</a></li> -->			
+
+		</ul>
+		<div id="search">
+		Search Tutorials:
+		<form style="display: inline" action="https://www.avajava.com/tutorials/search" method="get" name="searchForm">
+		<input style="margin-bottom: 2px;" type="text" size="20" maxlength="50" name="q" value="">
+		<input id="searchbutton" type="submit" value="  Go  ">
+		</form>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="topbreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./Abstract Factory Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./Abstract Factory Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Creational Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Factory Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/factory-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./Abstract Factory Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;3.
+Abstract Factory Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Builder Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/builder-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./Abstract Factory Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="content">
+		<div id="primaryContentContainer">
+			<div id="primaryContent">
+<table width="100%">
+	<tbody><tr>
+		<td id="sidemenu">
+		<div id="sidemenucats"><strong>Tutorial Categories:</strong> <ol><li><a href="https://www.avajava.com/tutorials/categories/ajax">Ajax</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/ant">Ant</a> (16)</li><li><a href="https://www.avajava.com/tutorials/categories/apache-web-server">Apache Web Server</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/bioinformatics">Bioinformatics</a> (10)</li><li><a href="https://www.avajava.com/tutorials/categories/cascading-style-sheets">Cascading Style Sheets</a> (47)</li><li><a href="https://www.avajava.com/tutorials/categories/classes-and-objects">Classes and Objects</a> (14)</li><li><a href="https://www.avajava.com/tutorials/categories/database">Database</a> (13)</li><li><a class="currentcategory" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a> (22)</li><li><a href="https://www.avajava.com/tutorials/categories/eclipse">Eclipse</a> (39)</li><li><a href="https://www.avajava.com/tutorials/categories/files">Files</a> (62)</li><li><a href="https://www.avajava.com/tutorials/categories/general-java">General Java</a> (69)</li><li><a href="https://www.avajava.com/tutorials/categories/jsps">JSPs</a> (9)</li><li><a href="https://www.avajava.com/tutorials/categories/java-basics">Java Basics</a> (11)</li><li><a href="https://www.avajava.com/tutorials/categories/linux">Linux</a> (23)</li><li><a href="https://www.avajava.com/tutorials/categories/logging">Logging</a> (5)</li><li><a href="https://www.avajava.com/tutorials/categories/maven">Maven</a> (88)</li><li><a href="https://www.avajava.com/tutorials/categories/search">Search</a> (12)</li><li><a href="https://www.avajava.com/tutorials/categories/servlets">Servlets</a> (20)</li><li><a href="https://www.avajava.com/tutorials/categories/struts">Struts</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/text">Text</a> (19)</li><li><a href="https://www.avajava.com/tutorials/categories/tomcat">Tomcat</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/version-control">Version Control</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/windows">Windows</a> (2)</li><li><a href="https://www.avajava.com/tutorials/categories/xml">XML</a> (1)</li></ol><!-- Google Ads is off  -->
+			<!-- Amazon Ads is off  -->
+			</div>
+		</td>
+
+		<td id="mainside"><!-- Google Ads is off  -->
+<hr>
+<div class="accentuate">
+<div class="title">Abstract Factory Pattern</div>
+<div>Author: Deron Eriksson</div>
+<div class="smaller">Description: This Java tutorial describes the abstract factory pattern, a popular creational design pattern.</div>
+<div class="smaller">
+Tutorial created using:
+Windows XP || JDK 1.6.0_10 || Eclipse JEE Ganymede SR1 (Eclipse 3.4.1)</div>
+</div>
+<hr>
+<br>
+
+<div style="font-weight: bold">Page: &nbsp;&nbsp; 1 <a href="https://www.avajava.com/tutorials/lessons/abstract-factory-pattern.html?page=2" title="Go to page 2">2</a>&nbsp;<a href="https://www.avajava.com/tutorials/lessons/abstract-factory-pattern.html?page=2" title="Go to page 2">&gt;</a></div><br>
+<p>The abstract factory pattern is a creational design pattern. An abstract factory is a factory that returns factories. Why is this layer of abstraction useful? A normal factory can be used to create sets of related objects. An abstract factory returns factories. Thus, an abstract factory is used to return factories that can be used to create sets of related objects. </p>
+
+<p>As an example, you could have a Ford Explorer factory that returns car part objects (mufflers, air filters, etc) associated with a Ford Explorer. You could also have a Chevy Tahoe factory that returns car part objects associated with a Chevy Tahoe. We could create an abstract factory that returns these different types of car factories depending on the car that we were interested in. We could then obtain car part objects from the car factory. Via polymorphism, we can use a common interface to get the different factories, and we could could then use a common interface to get the different car parts. </p>
+
+<p>Now, we'll look at the code for another simple example of the abstract factory design pattern. The sample project is shown here: </p>
+
+<img alt="Abstract Factory Pattern Example" title="Abstract Factory Pattern Example" src="./Abstract Factory Pattern - Web Tutorials - avajava.com_files/abstract-factory-pattern-01.gif">
+<p>Our AbstractFactory will return either a MammalFactory or a ReptileFactory via the SpeciesFactory return type. MammalFactory and ReptileFactory are subclasses of SpeciesFactory. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/abstract-factory-pattern/AbstractFactory.java">AbstractFactory.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> AbstractFactory {
+
+	<span class="javaKeyword">public</span> SpeciesFactory getSpeciesFactory(String type) {
+		<span class="javaKeyword">if</span> (<span class="javaString">"mammal"</span>.equals(type)) {
+			<span class="javaKeyword">return</span> <span class="javaKeyword">new</span> MammalFactory();
+		} <span class="javaKeyword">else</span> {
+			<span class="javaKeyword">return</span> <span class="javaKeyword">new</span> ReptileFactory();
+		}
+	}
+
+}
+</pre>
+<p>SpeciesFactory is an abstract class with the getAnimal() abstract method. This method returns an Animal object. The polymorphism of AbstractFactory is achieved because its getSpeciesFactory() method returns a SpeciesFactory, regardless of the actual underlying class. This polymorphism could also be achieved via an interface rather than an abstract class. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/abstract-factory-pattern/SpeciesFactory.java">SpeciesFactory.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">import</span> com.cakes.animals.Animal;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">abstract</span> <span class="javaKeyword">class</span> SpeciesFactory {
+	<span class="javaKeyword">public</span> <span class="javaKeyword">abstract</span> Animal getAnimal(String type);
+}
+</pre>
+<p>MammalFactory implements getAnimal(). It returns an Animal, which is either a Dog or a Cat. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/abstract-factory-pattern/MammalFactory.java">MammalFactory.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">import</span> com.cakes.animals.Animal;
+<span class="javaKeyword">import</span> com.cakes.animals.Cat;
+<span class="javaKeyword">import</span> com.cakes.animals.Dog;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> MammalFactory <span class="javaKeyword">extends</span> SpeciesFactory {
+
+	@Override
+	<span class="javaKeyword">public</span> Animal getAnimal(String type) {
+		<span class="javaKeyword">if</span> (<span class="javaString">"dog"</span>.equals(type)) {
+			<span class="javaKeyword">return</span> <span class="javaKeyword">new</span> Dog();
+		} <span class="javaKeyword">else</span> {
+			<span class="javaKeyword">return</span> <span class="javaKeyword">new</span> Cat();
+		}
+	}
+
+}
+</pre>
+<p>ReptileFactory implements getAnimal(). It returns an Animal, which is either a Snake or a Tyrannosaurus. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/abstract-factory-pattern/ReptileFactory.java">ReptileFactory.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">import</span> com.cakes.animals.Animal;
+<span class="javaKeyword">import</span> com.cakes.animals.Snake;
+<span class="javaKeyword">import</span> com.cakes.animals.Tyrannosaurus;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> ReptileFactory <span class="javaKeyword">extends</span> SpeciesFactory {
+
+	@Override
+	<span class="javaKeyword">public</span> Animal getAnimal(String type) {
+		<span class="javaKeyword">if</span> (<span class="javaString">"snake"</span>.equals(type)) {
+			<span class="javaKeyword">return</span> <span class="javaKeyword">new</span> Snake();
+		} <span class="javaKeyword">else</span> {
+			<span class="javaKeyword">return</span> <span class="javaKeyword">new</span> Tyrannosaurus();
+		}
+	}
+
+}
+</pre>
+
+<p class="continue">(Continued on page 2)</p><div style="font-weight: bold">Page: &nbsp;&nbsp; 1 <a href="https://www.avajava.com/tutorials/lessons/abstract-factory-pattern.html?page=2" title="Go to page 2">2</a>&nbsp;<a href="https://www.avajava.com/tutorials/lessons/abstract-factory-pattern.html?page=2" title="Go to page 2">&gt;</a></div><br>
+<hr>
+
+<!-- start related tutorials -->
+<div>
+<h3>Related Tutorials:</h3>
+<ul style="margin-left: 1em;">
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Creational Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/singleton-pattern.html" title="This Java tutorial describes the singleton pattern, a popular creational design pattern.">Singleton Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Creational Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/factory-pattern.html" title="This Java tutorial describes the factory pattern, a popular creational design pattern.">Factory Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Creational Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/builder-pattern.html" title="This Java tutorial describes the builder pattern, a creational design pattern.">Builder Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Creational Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/prototype-pattern.html" title="This Java tutorial describes the prototype pattern, a creational design pattern.">Prototype Pattern</a>
+</li>
+</ul>
+</div>
+<!-- end related tutorials -->
+
+<!-- Amazon Ads is off  -->
+	<!-- Google Ads is off  -->
+</td></tr></tbody></table>
+</div>
+		</div>
+
+		<div class="clear">&nbsp;</div>		
+	</div>
+	<div id="bottombreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./Abstract Factory Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./Abstract Factory Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Creational Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Factory Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/factory-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./Abstract Factory Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;3.
+Abstract Factory Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Builder Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/builder-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./Abstract Factory Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="footer">
+<p>Copyright © 2014 
+Code Strategies 
+		| Template: <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>
+		| <a href="http://www.avajava.com/contact.jsp">Contact</a>
+<!-- 		| <a href="http://www.avajava.com/about.jsp" title="About">About</a> -->
+		</p>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./Abstract Factory Pattern - Web Tutorials - avajava.com_files/ga.js.download" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4759485-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+
+</body></html>

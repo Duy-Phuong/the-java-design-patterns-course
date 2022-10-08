@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0061)https://www.avajava.com/tutorials/lessons/facade-pattern.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Facade Pattern - Web Tutorials - avajava.com</title>
+<meta name="keywords" content="Java, facade pattern, design pattern, structural pattern">
+<meta name="description" content="This Java tutorial describes the facade pattern, a structural design pattern.">
+<link href="./Facade Pattern - Web Tutorials - avajava.com_files/default.css" rel="stylesheet" type="text/css">
+<link href="./Facade Pattern - Web Tutorials - avajava.com_files/codeformat.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+<link rel="icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+</head>
+<body>
+<div id="outer">
+	<div id="header">
+		<h1>
+		<a href="https://www.avajava.com/tutorials">
+		AVAJAVA Web Tutorials</a>
+		</h1>
+		
+		<h2 id="firsth2">
+			Total Categories: 24,
+			Total Tutorials: 508</h2>
+	
+			<h2 id="secondh2">
+				Design Patterns:
+				10 of
+				22 tutorials
+				</h2>
+				<h2 id="thirdh2">
+				Facade Pattern</h2>
+			</div>
+	<div id="menu">
+		<ul>
+<!-- 
+		<li class="first">"Java forwards and backwards"</li>
+ --> 
+<!-- 		<li><a class="toptext" href="http://www.jarvana.com/" title="Search Maven Repository">Maven Repository Search</a></li>
+		<li><a class="toptext" href="http://www.jarvana.com/jarvana/doc" title="Search for Javadocs Classes and Projects">Javadoc Search</a></li> -->			
+
+		</ul>
+		<div id="search">
+		Search Tutorials:
+		<form style="display: inline" action="https://www.avajava.com/tutorials/search" method="get" name="searchForm">
+		<input style="margin-bottom: 2px;" type="text" size="20" maxlength="50" name="q" value="">
+		<input id="searchbutton" type="submit" value="  Go  ">
+		</form>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="topbreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./Facade Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./Facade Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Structural Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Flyweight Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/flyweight-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./Facade Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;10.
+Facade Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Bridge Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/bridge-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./Facade Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="content">
+		<div id="primaryContentContainer">
+			<div id="primaryContent">
+<table width="100%">
+	<tbody><tr>
+		<td id="sidemenu">
+		<div id="sidemenucats"><strong>Tutorial Categories:</strong> <ol><li><a href="https://www.avajava.com/tutorials/categories/ajax">Ajax</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/ant">Ant</a> (16)</li><li><a href="https://www.avajava.com/tutorials/categories/apache-web-server">Apache Web Server</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/bioinformatics">Bioinformatics</a> (10)</li><li><a href="https://www.avajava.com/tutorials/categories/cascading-style-sheets">Cascading Style Sheets</a> (47)</li><li><a href="https://www.avajava.com/tutorials/categories/classes-and-objects">Classes and Objects</a> (14)</li><li><a href="https://www.avajava.com/tutorials/categories/database">Database</a> (13)</li><li><a class="currentcategory" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a> (22)</li><li><a href="https://www.avajava.com/tutorials/categories/eclipse">Eclipse</a> (39)</li><li><a href="https://www.avajava.com/tutorials/categories/files">Files</a> (62)</li><li><a href="https://www.avajava.com/tutorials/categories/general-java">General Java</a> (69)</li><li><a href="https://www.avajava.com/tutorials/categories/jsps">JSPs</a> (9)</li><li><a href="https://www.avajava.com/tutorials/categories/java-basics">Java Basics</a> (11)</li><li><a href="https://www.avajava.com/tutorials/categories/linux">Linux</a> (23)</li><li><a href="https://www.avajava.com/tutorials/categories/logging">Logging</a> (5)</li><li><a href="https://www.avajava.com/tutorials/categories/maven">Maven</a> (88)</li><li><a href="https://www.avajava.com/tutorials/categories/search">Search</a> (12)</li><li><a href="https://www.avajava.com/tutorials/categories/servlets">Servlets</a> (20)</li><li><a href="https://www.avajava.com/tutorials/categories/struts">Struts</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/text">Text</a> (19)</li><li><a href="https://www.avajava.com/tutorials/categories/tomcat">Tomcat</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/version-control">Version Control</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/windows">Windows</a> (2)</li><li><a href="https://www.avajava.com/tutorials/categories/xml">XML</a> (1)</li></ol><!-- Google Ads is off  -->
+			<!-- Amazon Ads is off  -->
+			</div>
+		</td>
+
+		<td id="mainside"><!-- Google Ads is off  -->
+<hr>
+<div class="accentuate">
+<div class="title">Facade Pattern</div>
+<div>Author: Deron Eriksson</div>
+<div class="smaller">Description: This Java tutorial describes the facade pattern, a structural design pattern.</div>
+<div class="smaller">
+Tutorial created using:
+Windows Vista || JDK 1.6.0_11 || Eclipse JEE Ganymede SR1 (Eclipse 3.4.1)</div>
+</div>
+<hr>
+<br>
+
+<div style="font-weight: bold">Page: &nbsp;&nbsp; 1 <a href="https://www.avajava.com/tutorials/lessons/facade-pattern.html?page=2" title="Go to page 2">2</a>&nbsp;<a href="https://www.avajava.com/tutorials/lessons/facade-pattern.html?page=2" title="Go to page 2">&gt;</a></div><br>
+<p>The facade pattern is a structural design pattern. In the facade pattern, a facade classes is used to provide a single interface to set of classes. The facade simplifies a clients interaction with a complex system by localizing the interactions into a single interface. As a result, the client can interact with a single object rather than being required to interact directly in complicated ways with the objects that make up the subsystem. </p>
+
+<p>As an example, supposed we have three horribly written classes. For based on the class and method names (and the lack of documentation), it would be very difficult for a client to interact with these classes. </p>
+
+<p>Class1's doSomethingComplicated() method takes an integer and returns its cube. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/facade-pattern/Class1.java">Class1.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> Class1 {
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">int</span> doSomethingComplicated(<span class="javaKeyword">int</span> x) {
+		<span class="javaKeyword">return</span> x * x * x;
+	}
+
+}
+</pre>
+<p>Class2's doAnotherThing() method doubles the cube of an integer and returns it. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/facade-pattern/Class2.java">Class2.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> Class2 {
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">int</span> doAnotherThing(Class1 class1, <span class="javaKeyword">int</span> x) {
+		<span class="javaKeyword">return</span> 2 * class1.doSomethingComplicated(x);
+	}
+}
+</pre>
+<p>Class3's doMoreStuff() takes a Class1 object, a Class2 object, and an integer and returns twice the sixth power of the integer. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/facade-pattern/Class3.java">Class3.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> Class3 {
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">int</span> doMoreStuff(Class1 class1, Class2 class2, <span class="javaKeyword">int</span> x) {
+		<span class="javaKeyword">return</span> class1.doSomethingComplicated(x) * class2.doAnotherThing(class1, x);
+	}
+
+}
+</pre>
+<p>For a client unfamiliar with Class1, Class2, and Class3, it would be very difficult to figure out how to interact with these classes. The classes interact and perform tasks in unclear ways. As a result, we need to be able to simplify interaction with this system of classes so that clients can interact with these classes in a simple, standardized manner. </p>
+
+<p>We do this with the Facade class. The Facade class has three methods: cubeX(), cubeXTimes2(), and xToSixthPowerTimes2(). The names of these methods clearly indicate what they do, and these methods hide the interactions of Class1, Class2, and Class3 from client code. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/facade-pattern/Facade.java">Facade.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> Facade {
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">int</span> cubeX(<span class="javaKeyword">int</span> x) {
+		Class1 class1 = <span class="javaKeyword">new</span> Class1();
+		<span class="javaKeyword">return</span> class1.doSomethingComplicated(x);
+	}
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">int</span> cubeXTimes2(<span class="javaKeyword">int</span> x) {
+		Class1 class1 = <span class="javaKeyword">new</span> Class1();
+		Class2 class2 = <span class="javaKeyword">new</span> Class2();
+		<span class="javaKeyword">return</span> class2.doAnotherThing(class1, x);
+	}
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">int</span> xToSixthPowerTimes2(<span class="javaKeyword">int</span> x) {
+		Class1 class1 = <span class="javaKeyword">new</span> Class1();
+		Class2 class2 = <span class="javaKeyword">new</span> Class2();
+		Class3 class3 = <span class="javaKeyword">new</span> Class3();
+		<span class="javaKeyword">return</span> class3.doMoreStuff(class1, class2, x);
+	}
+
+}
+</pre>
+
+<p class="continue">(Continued on page 2)</p><div style="font-weight: bold">Page: &nbsp;&nbsp; 1 <a href="https://www.avajava.com/tutorials/lessons/facade-pattern.html?page=2" title="Go to page 2">2</a>&nbsp;<a href="https://www.avajava.com/tutorials/lessons/facade-pattern.html?page=2" title="Go to page 2">&gt;</a></div><br>
+<hr>
+
+<!-- start related tutorials -->
+<div>
+<h3>Related Tutorials:</h3>
+<ul style="margin-left: 1em;">
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/adapter-pattern.html" title="This Java tutorial describes the adapter pattern, a structural design pattern.">Adapter Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/composite-pattern.html" title="This Java tutorial describes the composite pattern, a structural design pattern.">Composite Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/proxy-pattern.html" title="This Java tutorial describes the proxy pattern, a structural design pattern.">Proxy Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/flyweight-pattern.html" title="This Java tutorial describes the flyweight pattern, a structural design pattern.">Flyweight Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/bridge-pattern.html" title="This Java tutorial describes the bridge pattern, a structural design pattern.">Bridge Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/decorator-pattern.html" title="This Java tutorial describes the decorator pattern, a structural design pattern.">Decorator Pattern</a>
+</li>
+</ul>
+</div>
+<!-- end related tutorials -->
+
+<!-- Amazon Ads is off  -->
+	<!-- Google Ads is off  -->
+</td></tr></tbody></table>
+</div>
+		</div>
+
+		<div class="clear">&nbsp;</div>		
+	</div>
+	<div id="bottombreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./Facade Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./Facade Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Structural Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Flyweight Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/flyweight-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./Facade Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;10.
+Facade Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Bridge Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/bridge-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./Facade Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="footer">
+<p>Copyright © 2014 
+Code Strategies 
+		| Template: <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>
+		| <a href="http://www.avajava.com/contact.jsp">Contact</a>
+<!-- 		| <a href="http://www.avajava.com/about.jsp" title="About">About</a> -->
+		</p>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./Facade Pattern - Web Tutorials - avajava.com_files/ga.js.tải xuống" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4759485-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+
+</body></html>

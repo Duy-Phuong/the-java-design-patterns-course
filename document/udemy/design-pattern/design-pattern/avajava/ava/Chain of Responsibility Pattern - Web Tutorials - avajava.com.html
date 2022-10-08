@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0078)https://www.avajava.com/tutorials/lessons/chain-of-responsibility-pattern.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Chain of Responsibility Pattern - Web Tutorials - avajava.com</title>
+<meta name="keywords" content="Java, chain of responsibility pattern, design pattern, behavioral pattern">
+<meta name="description" content="This Java tutorial describes the chain of responsibility pattern, a behavioral object pattern.">
+<link href="./Chain of Responsibility Pattern - Web Tutorials - avajava.com_files/default.css" rel="stylesheet" type="text/css">
+<link href="./Chain of Responsibility Pattern - Web Tutorials - avajava.com_files/codeformat.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+<link rel="icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+</head>
+<body>
+<div id="outer">
+	<div id="header">
+		<h1>
+		<a href="https://www.avajava.com/tutorials">
+		AVAJAVA Web Tutorials</a>
+		</h1>
+		
+		<h2 id="firsth2">
+			Total Categories: 24,
+			Total Tutorials: 508</h2>
+	
+			<h2 id="secondh2">
+				Design Patterns:
+				15 of
+				22 tutorials
+				</h2>
+				<h2 id="thirdh2">
+				Chain of Responsibility Pattern</h2>
+			</div>
+	<div id="menu">
+		<ul>
+<!-- 
+		<li class="first">"Java forwards and backwards"</li>
+ --> 
+<!-- 		<li><a class="toptext" href="http://www.jarvana.com/" title="Search Maven Repository">Maven Repository Search</a></li>
+		<li><a class="toptext" href="http://www.jarvana.com/jarvana/doc" title="Search for Javadocs Classes and Projects">Javadoc Search</a></li> -->			
+
+		</ul>
+		<div id="search">
+		Search Tutorials:
+		<form style="display: inline" action="https://www.avajava.com/tutorials/search" method="get" name="searchForm">
+		<input style="margin-bottom: 2px;" type="text" size="20" maxlength="50" name="q" value="">
+		<input id="searchbutton" type="submit" value="  Go  ">
+		</form>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="topbreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./Chain of Responsibility Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./Chain of Responsibility Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Mediator Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/mediator-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./Chain of Responsibility Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;15.
+Chain of Responsibility Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Observer Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/observer-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./Chain of Responsibility Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="content">
+		<div id="primaryContentContainer">
+			<div id="primaryContent">
+<table width="100%">
+	<tbody><tr>
+		<td id="sidemenu">
+		<div id="sidemenucats"><strong>Tutorial Categories:</strong> <ol><li><a href="https://www.avajava.com/tutorials/categories/ajax">Ajax</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/ant">Ant</a> (16)</li><li><a href="https://www.avajava.com/tutorials/categories/apache-web-server">Apache Web Server</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/bioinformatics">Bioinformatics</a> (10)</li><li><a href="https://www.avajava.com/tutorials/categories/cascading-style-sheets">Cascading Style Sheets</a> (47)</li><li><a href="https://www.avajava.com/tutorials/categories/classes-and-objects">Classes and Objects</a> (14)</li><li><a href="https://www.avajava.com/tutorials/categories/database">Database</a> (13)</li><li><a class="currentcategory" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a> (22)</li><li><a href="https://www.avajava.com/tutorials/categories/eclipse">Eclipse</a> (39)</li><li><a href="https://www.avajava.com/tutorials/categories/files">Files</a> (62)</li><li><a href="https://www.avajava.com/tutorials/categories/general-java">General Java</a> (69)</li><li><a href="https://www.avajava.com/tutorials/categories/jsps">JSPs</a> (9)</li><li><a href="https://www.avajava.com/tutorials/categories/java-basics">Java Basics</a> (11)</li><li><a href="https://www.avajava.com/tutorials/categories/linux">Linux</a> (23)</li><li><a href="https://www.avajava.com/tutorials/categories/logging">Logging</a> (5)</li><li><a href="https://www.avajava.com/tutorials/categories/maven">Maven</a> (88)</li><li><a href="https://www.avajava.com/tutorials/categories/search">Search</a> (12)</li><li><a href="https://www.avajava.com/tutorials/categories/servlets">Servlets</a> (20)</li><li><a href="https://www.avajava.com/tutorials/categories/struts">Struts</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/text">Text</a> (19)</li><li><a href="https://www.avajava.com/tutorials/categories/tomcat">Tomcat</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/version-control">Version Control</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/windows">Windows</a> (2)</li><li><a href="https://www.avajava.com/tutorials/categories/xml">XML</a> (1)</li></ol><!-- Google Ads is off  -->
+			<!-- Amazon Ads is off  -->
+			</div>
+		</td>
+
+		<td id="mainside"><!-- Google Ads is off  -->
+<hr>
+<div class="accentuate">
+<div class="title">Chain of Responsibility Pattern</div>
+<div>Author: Deron Eriksson</div>
+<div class="smaller">Description: This Java tutorial describes the chain of responsibility pattern, a behavioral object pattern.</div>
+<div class="smaller">
+Tutorial created using:
+Windows Vista || JDK 1.6.0_11 || Eclipse JEE Ganymede SR1 (Eclipse 3.4.1)</div>
+</div>
+<hr>
+<br>
+
+<div style="font-weight: bold">Page: &nbsp;&nbsp; 1 <a href="https://www.avajava.com/tutorials/lessons/chain-of-responsibility-pattern.html?page=2" title="Go to page 2">2</a>&nbsp;<a href="https://www.avajava.com/tutorials/lessons/chain-of-responsibility-pattern.html?page=2" title="Go to page 2">&gt;</a></div><br>
+<p>The chain of responsibility pattern is a behavioral object design pattern. In the chain of responsibility pattern, a series of handler objects are chained together to handle a request made by a client object. If the first handler can't handle the request, the request is forwarded to the next handler, and it is passed down the chain until the request reaches a handler that can handle the request or the chain ends. In this pattern, the client is decoupled from the actual handling of the request, since it does not know what class will actually handle the request. </p>
+
+<p>In this pattern, a Handler is an interface for handling a request and accessing a handler's successor. A Handler is implemented by a Concrete Handler. The Concrete Handler will handle the request or pass it on to the next Concrete Handler. A Client makes the request to the start of the handler chain. </p>
+
+<p>Now, let's look at an example of the chain of responsibility pattern. Rather than an interface, I'll use an abstract base class as the handler so that subclasses can utilize the implemented setSuccessor() method. This abstract class is called PlanetHandler. Concrete handlers that subclass PlanetHandler need to implement the handleRequest() method. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/chain-of-responsibility-pattern/PlanetHandler.java">PlanetHandler.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">abstract</span> <span class="javaKeyword">class</span> PlanetHandler {
+
+	PlanetHandler successor;
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> setSuccessor(PlanetHandler successor) {
+		<span class="javaKeyword">this</span>.successor = successor;
+	}
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">abstract</span> <span class="javaKeyword">void</span> handleRequest(PlanetEnum request);
+
+}
+</pre>
+<p>This example will utilize an enum of the planets called PlanetEnum. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/chain-of-responsibility-pattern/PlanetEnum.java">PlanetEnum.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">enum</span> PlanetEnum {
+	MERCURY, VENUS, EARTH, MARS, JUPITER, SATURN, URANUS, NEPTUNE;
+}
+</pre>
+<p>MercuryHandler subclasses PlanetHandler and implements the handleRequest() method. If the request is a PlanetEnum.MERCURY, it will handle the request. Otherwise, the request is passed on to this handler's successor if the successor exists. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/chain-of-responsibility-pattern/MercuryHandler.java">MercuryHandler.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> MercuryHandler <span class="javaKeyword">extends</span> PlanetHandler {
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> handleRequest(PlanetEnum request) {
+		<span class="javaKeyword">if</span> (request == PlanetEnum.MERCURY) {
+			System.out.println(<span class="javaString">"MercuryHandler handles "</span> + request);
+			System.out.println(<span class="javaString">"Mercury is hot.\n"</span>);
+		} <span class="javaKeyword">else</span> {
+			System.out.println(<span class="javaString">"MercuryHandler doesn't handle "</span> + request);
+			<span class="javaKeyword">if</span> (successor != null) {
+				successor.handleRequest(request);
+			}
+		}
+	}
+
+}
+</pre>
+<p>VenusHandler is similar to MercuryHandler, except it handles PlanetEnum.VENUS requests. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/chain-of-responsibility-pattern/VenusHandler.java">VenusHandler.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> VenusHandler <span class="javaKeyword">extends</span> PlanetHandler {
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> handleRequest(PlanetEnum request) {
+		<span class="javaKeyword">if</span> (request == PlanetEnum.VENUS) {
+			System.out.println(<span class="javaString">"VenusHandler handles "</span> + request);
+			System.out.println(<span class="javaString">"Venus is poisonous.\n"</span>);
+		} <span class="javaKeyword">else</span> {
+			System.out.println(<span class="javaString">"VenusHandler doesn't handle "</span> + request);
+			<span class="javaKeyword">if</span> (successor != null) {
+				successor.handleRequest(request);
+			}
+		}
+	}
+
+}
+</pre>
+
+<p class="continue">(Continued on page 2)</p><div style="font-weight: bold">Page: &nbsp;&nbsp; 1 <a href="https://www.avajava.com/tutorials/lessons/chain-of-responsibility-pattern.html?page=2" title="Go to page 2">2</a>&nbsp;<a href="https://www.avajava.com/tutorials/lessons/chain-of-responsibility-pattern.html?page=2" title="Go to page 2">&gt;</a></div><br>
+<hr>
+
+<!-- start related tutorials -->
+<div>
+<h3>Related Tutorials:</h3>
+<ul style="margin-left: 1em;">
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/template-method-pattern.html" title="This Java tutorial describes the template method pattern, a behavioral class pattern.">Template Method Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/mediator-pattern.html" title="This Java tutorial describes the mediator pattern, a behavioral object pattern.">Mediator Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/observer-pattern.html" title="This Java tutorial describes the observer pattern, a behavioral object pattern.">Observer Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/strategy-pattern.html" title="This Java tutorial describes the strategy pattern, a behavioral object pattern.">Strategy Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/command-pattern.html" title="This Java tutorial describes the command pattern, a behavioral object pattern.">Command Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/state-pattern.html" title="This Java tutorial describes the state pattern, a behavioral object pattern.">State Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/visitor-pattern.html" title="This Java tutorial describes the visitor pattern, a behavioral object pattern.">Visitor Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/iterator-pattern.html" title="This Java tutorial describes the iterator pattern, a behavioral object pattern.">Iterator Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/memento-pattern.html" title="This Java tutorial describes the memento pattern, a behavioral object pattern.">Memento Pattern</a>
+</li>
+</ul>
+</div>
+<!-- end related tutorials -->
+
+<!-- Amazon Ads is off  -->
+	<!-- Google Ads is off  -->
+</td></tr></tbody></table>
+</div>
+		</div>
+
+		<div class="clear">&nbsp;</div>		
+	</div>
+	<div id="bottombreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./Chain of Responsibility Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./Chain of Responsibility Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Behavioral Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Mediator Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/mediator-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./Chain of Responsibility Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;15.
+Chain of Responsibility Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Observer Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/observer-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./Chain of Responsibility Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="footer">
+<p>Copyright © 2014 
+Code Strategies 
+		| Template: <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>
+		| <a href="http://www.avajava.com/contact.jsp">Contact</a>
+<!-- 		| <a href="http://www.avajava.com/about.jsp" title="About">About</a> -->
+		</p>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./Chain of Responsibility Pattern - Web Tutorials - avajava.com_files/ga.js.tải xuống" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4759485-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+
+</body></html>

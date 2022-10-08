@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0064)https://www.avajava.com/tutorials/lessons/decorator-pattern.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Decorator Pattern - Web Tutorials - avajava.com</title>
+<meta name="keywords" content="Java, decorator pattern, design pattern, structural pattern">
+<meta name="description" content="This Java tutorial describes the decorator pattern, a structural design pattern.">
+<link href="./Decorator Pattern - Web Tutorials - avajava.com_files/default.css" rel="stylesheet" type="text/css">
+<link href="./Decorator Pattern - Web Tutorials - avajava.com_files/codeformat.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+<link rel="icon" href="http://www.avajava.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+</head>
+<body>
+<div id="outer">
+	<div id="header">
+		<h1>
+		<a href="https://www.avajava.com/tutorials">
+		AVAJAVA Web Tutorials</a>
+		</h1>
+		
+		<h2 id="firsth2">
+			Total Categories: 24,
+			Total Tutorials: 508</h2>
+	
+			<h2 id="secondh2">
+				Design Patterns:
+				12 of
+				22 tutorials
+				</h2>
+				<h2 id="thirdh2">
+				Decorator Pattern</h2>
+			</div>
+	<div id="menu">
+		<ul>
+<!-- 
+		<li class="first">"Java forwards and backwards"</li>
+ --> 
+<!-- 		<li><a class="toptext" href="http://www.jarvana.com/" title="Search Maven Repository">Maven Repository Search</a></li>
+		<li><a class="toptext" href="http://www.jarvana.com/jarvana/doc" title="Search for Javadocs Classes and Projects">Javadoc Search</a></li> -->			
+
+		</ul>
+		<div id="search">
+		Search Tutorials:
+		<form style="display: inline" action="https://www.avajava.com/tutorials/search" method="get" name="searchForm">
+		<input style="margin-bottom: 2px;" type="text" size="20" maxlength="50" name="q" value="">
+		<input id="searchbutton" type="submit" value="  Go  ">
+		</form>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="topbreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./Decorator Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./Decorator Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Structural Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Bridge Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/bridge-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./Decorator Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;12.
+Decorator Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Template Method Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/template-method-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./Decorator Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="content">
+		<div id="primaryContentContainer">
+			<div id="primaryContent">
+<table width="100%">
+	<tbody><tr>
+		<td id="sidemenu">
+		<div id="sidemenucats"><strong>Tutorial Categories:</strong> <ol><li><a href="https://www.avajava.com/tutorials/categories/ajax">Ajax</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/ant">Ant</a> (16)</li><li><a href="https://www.avajava.com/tutorials/categories/apache-web-server">Apache Web Server</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/bioinformatics">Bioinformatics</a> (10)</li><li><a href="https://www.avajava.com/tutorials/categories/cascading-style-sheets">Cascading Style Sheets</a> (47)</li><li><a href="https://www.avajava.com/tutorials/categories/classes-and-objects">Classes and Objects</a> (14)</li><li><a href="https://www.avajava.com/tutorials/categories/database">Database</a> (13)</li><li><a class="currentcategory" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a> (22)</li><li><a href="https://www.avajava.com/tutorials/categories/eclipse">Eclipse</a> (39)</li><li><a href="https://www.avajava.com/tutorials/categories/files">Files</a> (62)</li><li><a href="https://www.avajava.com/tutorials/categories/general-java">General Java</a> (69)</li><li><a href="https://www.avajava.com/tutorials/categories/jsps">JSPs</a> (9)</li><li><a href="https://www.avajava.com/tutorials/categories/java-basics">Java Basics</a> (11)</li><li><a href="https://www.avajava.com/tutorials/categories/linux">Linux</a> (23)</li><li><a href="https://www.avajava.com/tutorials/categories/logging">Logging</a> (5)</li><li><a href="https://www.avajava.com/tutorials/categories/maven">Maven</a> (88)</li><li><a href="https://www.avajava.com/tutorials/categories/search">Search</a> (12)</li><li><a href="https://www.avajava.com/tutorials/categories/servlets">Servlets</a> (20)</li><li><a href="https://www.avajava.com/tutorials/categories/struts">Struts</a> (1)</li><li><a href="https://www.avajava.com/tutorials/categories/text">Text</a> (19)</li><li><a href="https://www.avajava.com/tutorials/categories/tomcat">Tomcat</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/version-control">Version Control</a> (8)</li><li><a href="https://www.avajava.com/tutorials/categories/windows">Windows</a> (2)</li><li><a href="https://www.avajava.com/tutorials/categories/xml">XML</a> (1)</li></ol><!-- Google Ads is off  -->
+			<!-- Amazon Ads is off  -->
+			</div>
+		</td>
+
+		<td id="mainside"><!-- Google Ads is off  -->
+<hr>
+<div class="accentuate">
+<div class="title">Decorator Pattern</div>
+<div>Author: Deron Eriksson</div>
+<div class="smaller">Description: This Java tutorial describes the decorator pattern, a structural design pattern.</div>
+<div class="smaller">
+Tutorial created using:
+Windows Vista || JDK 1.6.0_11 || Eclipse JEE Ganymede SR1 (Eclipse 3.4.1)</div>
+</div>
+<hr>
+<br>
+
+<div style="font-weight: bold">Page: &nbsp;&nbsp; 1 <a href="https://www.avajava.com/tutorials/lessons/decorator-pattern.html?page=2" title="Go to page 2">2</a>&nbsp;<a href="https://www.avajava.com/tutorials/lessons/decorator-pattern.html?page=2" title="Go to page 2">&gt;</a></div><br>
+<p>The decorator pattern is a structural design pattern. Whereas inheritance adds functionality to classes, the decorator pattern adds functionality to objects by wrapping objects in other objects. Each time additional functionality is required, the object is wrapped in another object. Java<a class="extlink2" href="http://java.sun.com/" title="Go to Site for &#39;Sun Java Developers Site&#39;">S</a><a class="extlink" href="http://en.wikipedia.org/wiki/Java_(programming_language)" title="Go to &#39;Java (programming language)&#39; in Wikipedia">W</a> I/O streams are a well-known example of the decorator pattern. </p>
+
+<p>For the decorator pattern, we require a class that serves as the base object that we add functionality to. This is a Concrete Component, and it implements a Component interface. The Component interface declares the common operations that are to be performed by the concrete component and all the decorators that wrap the concrete component object. A Decorator is an abstract class that implements the Component interface and contains a reference to a Component. Concrete Decorators are classes that extend Decorator. </p>
+
+<p>We can illustrate the decorator pattern with an example. We'll start by creating an Animal interface. The Animal interface is our component interface. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/decorator-pattern/Animal.java">Animal.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">interface</span> Animal {
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> describe();
+
+}
+</pre>
+<p>LivingAnimal implements Animal and is our concrete component. Its describe() method displays a message indicating that it is an animal. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/decorator-pattern/LivingAnimal.java">LivingAnimal.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> LivingAnimal <span class="javaKeyword">implements</span> Animal {
+
+	@Override
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> describe() {
+		System.out.println(<span class="javaString">"\nI am an animal."</span>);
+	}
+
+}
+</pre>
+<p>AnimalDecorator is our decorator abstract class. It implements Animal but since it is an abstract class, it does not have to implement describe(). Its constructor sets its Animal reference field. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/decorator-pattern/AnimalDecorator.java">AnimalDecorator.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">abstract</span> <span class="javaKeyword">class</span> AnimalDecorator <span class="javaKeyword">implements</span> Animal {
+
+	Animal animal;
+
+	<span class="javaKeyword">public</span> AnimalDecorator(Animal animal) {
+		<span class="javaKeyword">this</span>.animal = animal;
+	}
+
+}
+</pre>
+<p>LegDecorator is a concrete decorator. Its constructor passes an Animal reference to AnimalDecorator's constructor. Its describe() method call's the Animal reference's describe() method and then outputs an additional message. It then calls its dance() method, showing that additional functionality can be added by the concrete decorator. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/decorator-pattern/LegDecorator.java">LegDecorator.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> LegDecorator <span class="javaKeyword">extends</span> AnimalDecorator {
+
+	<span class="javaKeyword">public</span> LegDecorator(Animal animal) {
+		<span class="javaKeyword">super</span>(animal);
+	}
+
+	@Override
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> describe() {
+		animal.describe();
+		System.out.println(<span class="javaString">"I have legs."</span>);
+		dance();
+	}
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> dance() {
+		System.out.println(<span class="javaString">"I can dance."</span>);
+	}
+
+}
+</pre>
+<p>WingDecorator is a concrete decorator very similar to LegDecorator. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/decorator-pattern/WingDecorator.java">WingDecorator.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> WingDecorator <span class="javaKeyword">extends</span> AnimalDecorator {
+
+	<span class="javaKeyword">public</span> WingDecorator(Animal animal) {
+		<span class="javaKeyword">super</span>(animal);
+	}
+
+	@Override
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> describe() {
+		animal.describe();
+		System.out.println(<span class="javaString">"I have wings."</span>);
+		fly();
+	}
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> fly() {
+		System.out.println(<span class="javaString">"I can fly."</span>);
+	}
+
+}
+</pre>
+<p>GrowlDecorator is another concrete decorator. </p>
+
+<h3><a href="https://www.avajava.com/tutorials/design-patterns/decorator-pattern/GrowlDecorator.java">GrowlDecorator.java</a></h3>
+<pre><span class="javaKeyword">package</span> com.cakes;
+
+<span class="javaKeyword">public</span> <span class="javaKeyword">class</span> GrowlDecorator <span class="javaKeyword">extends</span> AnimalDecorator {
+
+	<span class="javaKeyword">public</span> GrowlDecorator(Animal animal) {
+		<span class="javaKeyword">super</span>(animal);
+	}
+
+	@Override
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> describe() {
+		animal.describe();
+		growl();
+	}
+
+	<span class="javaKeyword">public</span> <span class="javaKeyword">void</span> growl() {
+		System.out.println(<span class="javaString">"Grrrrr."</span>);
+	}
+
+}
+</pre>
+
+<p class="continue">(Continued on page 2)</p><div style="font-weight: bold">Page: &nbsp;&nbsp; 1 <a href="https://www.avajava.com/tutorials/lessons/decorator-pattern.html?page=2" title="Go to page 2">2</a>&nbsp;<a href="https://www.avajava.com/tutorials/lessons/decorator-pattern.html?page=2" title="Go to page 2">&gt;</a></div><br>
+<hr>
+
+<!-- start related tutorials -->
+<div>
+<h3>Related Tutorials:</h3>
+<ul style="margin-left: 1em;">
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/adapter-pattern.html" title="This Java tutorial describes the adapter pattern, a structural design pattern.">Adapter Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/composite-pattern.html" title="This Java tutorial describes the composite pattern, a structural design pattern.">Composite Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/proxy-pattern.html" title="This Java tutorial describes the proxy pattern, a structural design pattern.">Proxy Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/flyweight-pattern.html" title="This Java tutorial describes the flyweight pattern, a structural design pattern.">Flyweight Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/facade-pattern.html" title="This Java tutorial describes the facade pattern, a structural design pattern.">Facade Pattern</a>
+</li>
+<li>
+<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>
+
+
+::
+Structural Design Patterns
+
+::
+<a href="https://www.avajava.com/tutorials/lessons/bridge-pattern.html" title="This Java tutorial describes the bridge pattern, a structural design pattern.">Bridge Pattern</a>
+</li>
+</ul>
+</div>
+<!-- end related tutorials -->
+
+<!-- Amazon Ads is off  -->
+	<!-- Google Ads is off  -->
+</td></tr></tbody></table>
+</div>
+		</div>
+
+		<div class="clear">&nbsp;</div>		
+	</div>
+	<div id="bottombreadcrumb">
+<div class="breadcrumbouter">
+<div class="breadcrumbinner">
+<a title="Go to Categories Index" href="https://www.avajava.com/tutorials/">Web Tutorials</a>
+::
+<a title="Go to previous category: &#39;Database&#39;" href="https://www.avajava.com/tutorials/categories/database"><img alt="Go to previous category" style="display: inline; border: 0px;" src="./Decorator Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;<a title="Go to &#39;Design Patterns&#39; category" href="https://www.avajava.com/tutorials/categories/design-patterns">Design Patterns</a>&nbsp;<a title="Go to next category: &#39;Eclipse&#39;" href="https://www.avajava.com/tutorials/categories/eclipse"><img alt="Go to next category" style="display: inline; border: 0px;" src="./Decorator Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+
+::
+Structural Design Patterns
+
+::
+<a title="Go to previous tutorial in &#39;Design Patterns&#39; category: &#39;Bridge Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/bridge-pattern.html"><img alt="Go to previous tutorial" style="display: inline; border: 0px;" src="./Decorator Pattern - Web Tutorials - avajava.com_files/previous.gif"></a>&nbsp;12.
+Decorator Pattern&nbsp;<a title="Go to next tutorial in &#39;Design Patterns&#39; category: &#39;Template Method Pattern&#39;" href="https://www.avajava.com/tutorials/lessons/template-method-pattern.html"><img alt="Go to next tutorial" style="display: inline; border: 0px;" src="./Decorator Pattern - Web Tutorials - avajava.com_files/next.gif"></a>
+
+</div>
+</div>
+
+</div>
+
+<div id="footer">
+<p>Copyright © 2014 
+Code Strategies 
+		| Template: <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>
+		| <a href="http://www.avajava.com/contact.jsp">Contact</a>
+<!-- 		| <a href="http://www.avajava.com/about.jsp" title="About">About</a> -->
+		</p>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./Decorator Pattern - Web Tutorials - avajava.com_files/ga.js.tải xuống" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4759485-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+
+</body></html>
